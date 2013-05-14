@@ -1,0 +1,26 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.navbar .nav .active > a, .navbar .nav .active > a:hover {color: #E8DDCB;
+}
+
+.navbar-inner, .navbar {
+	letter-spacing: +3px;
+}
+ 
+ .footer {
+     position: relative; 
+     margin-top: 20px;
+     text-align: center;
+     color: #222
+ }
+
+@import "compass";
+// This yields a gradient starting at the top with #fff, ending in #aaa
+#v-gradient {
+  @include background-image(linear-gradient(#222, black)); } 
+
+// This yields a gradient starting at the top with #aaa, ending in #fff
+#v_new-gradient {
+  @include background-image(linear-gradient(black, #222)); } 
