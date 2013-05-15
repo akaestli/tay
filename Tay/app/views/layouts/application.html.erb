@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Made by Alicia J. Kaeslti, last updated on 2012/12/1 !-->
+<html>
+
+<head>
+  <title>Tay Group</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <style type="text/css">
+  body{background-image:url('billie_holiday.png')}
+  p{color: #222}
+  navbar .container{width: 960px;}
+  </style>
+</head> 
+
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <ul class = "nav">
+            <a class="brand" href="/"><strong>Tay Group</strong></a>
+          <li class="divider-vertical"></li>
+          <li><a href="/research"><strong>Reserach</strong></a></li>
+          <li><a href="/news"><strong>News</strong></a></li>
+          <li><a href="/publications"><strong>Publications</strong></a></li>
+          <li><a href="/people"><strong>People</strong></a></li>
+          <li><a href="/opportunities"><strong>Opportunities</strong></a></li>
+          <li><a href="/contact"><strong>Contact</strong></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <%= yield %>
+</div>
+
+<div class="footer">
+  <p>The Tay Group 2012</p>
+</div>
+
+</body>
+
+</html>

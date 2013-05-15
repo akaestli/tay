@@ -1,0 +1,162 @@
+$navbarPadding: 0px;
+$navbarLinkColorHover: #E8DDCB;
+$navbarBackgroundHighlight: #033649;
+$navbarHeight: 50px;
+$navbarLinkColor: #E8DDCB;
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  ul { margin-left:20px; color:blue; }
+  li { cursor:default; }
+  span { color:red; }
+</style>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner">
+  <div class="container">
+    <ul class = "nav">
+        <a class="brand" href="/"><strong>Tay Group</strong></a>
+      <li class="divider-vertical"></li>
+      <li><a href="/research" id="nav1"><strong>Reserach</strong></a></li>
+      <li><a href="/news" id="nav2"><strong>News</strong></a></li>
+      <li><a href="/publications" id="nav3"><strong>Publications</strong></a></li>
+      <li><a href="/people" id="nav4"><strong>People</strong></a></li>
+      <li><a href="/opportunities" id="nav5"><strong>Opportunities</strong></a></li>
+      <li><a href="/contact" id="nav6"><strong>Contact</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<div class="container-fluid">
+	<div class = "row-fluid">
+	  <div class="span12"></div>
+	</div>
+	<div class="row-fluid">
+		<div class="span8 offset2">
+			<div class="well-small" style="text-align: center; background: black">
+				<h1 id="awesome" style="color: #CCC; font-size: 50px; font-weight: bold; letter-spacing: +5px; line-height: 1.5; text-align:center; ">Tay Group</h1>
+				<h3 style="color:#CCC; text-align:center; letter-spacing: +2px">Systems Biology and Bioengineering</h>
+			</div>
+		</div>
+
+		<div class="row-fluid">
+			<div class="span8 offset2" style="text-align: center">
+					<img id="img_1" src="http://placehold.it/900x700/ffffff/OOOOOO"></img>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+$(document).ready(function () {
+
+	$('#nav1').hover(
+	  function () {
+	  	$('#awesome').append($("<img src='tay_website_v1_topL_flat.jpg'></img>"));
+	  	$('#img_1').attr({src: "tay_website_v1_topL_flat.jpg"});
+	    $(this).append($("<span> ***</span>"));
+	  }, 
+
+	  function () {
+	    $(this).find("span:last").remove();
+	    $(this).find("span:last").remove();
+	  }
+
+	);
+
+
+
+
+});
+</script>
+
+</body>
+</html>
+
+
+****************************
+
+<!DOCTYPE html>
+<!-- Made by Alicia J. Kaeslti, last updated on 2013/1/3 !-->
+<html>
+<head>
+
+<style type="text/css">
+  h1{color: #CCC; font-size: 50px; font-weight: bold; letter-spacing: +5px}
+  body{font-size: 13px; line-height: 18px; letter-spacing: +2px}
+</style>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+</head>
+
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner">
+  <div class="container">
+    <ul class = "nav">
+        <a class="brand" href="/"><strong>Tay Group</strong></a>
+      <li class="divider-vertical"></li>
+      <li><a href="/research" id="nav1"><strong>Reserach</strong></a></li>
+      <li><a href="/news" id="nav2"><strong>News</strong></a></li>
+      <li><a href="/publications" id="nav3"><strong>Publications</strong></a></li>
+      <li><a href="/people" id="nav4"><strong>People</strong></a></li>
+      <li><a href="/opportunities" id="nav5"><strong>Opportunities</strong></a></li>
+      <li><a href="/contact" id="nav6"><strong>Contact</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<div class="container-fluid">
+</div>
+</div>
+
+<div class="container-fluid">
+	<div class = "row-fluid">
+	  <div class="span12"></div>
+	</div>
+	<div class="row-fluid">
+		<div class="span8 offset2">
+			<div class="well-small" style="text-align: center; background: black">
+				<h1 style="color: #CCC; font-size: 50px; font-weight: bold; letter-spacing: +5px; line-height: 1.5; text-align:center; ">Tay Group</h1>
+				<h3 style="color:#CCC; text-align:center; letter-spacing: +2px">Systems Biology and Bioengineering</h>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span8 offset2" style="text-align: center">
+					<img id="img_1" src="http://placehold.it/900x700/ffffff/OOOOOO" class = "img-rounded" style = "height: auto; width: 100%; overflow:hidden; padding: 0px">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+  <p style="color: #CCC">The Tay Group 2012</p>
+</div>
+
+<script>
+$(document).ready(function () {
+
+	$('#nav1').hover(
+	  function () {
+	  	$('#img_1').attr({src: "tay_website_v1_midL_web.jpg"});
+	  },
+	);
+	
+});
+</script>
+
+</body>
+</html>
