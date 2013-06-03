@@ -7,9 +7,8 @@ set :applicationdir, "/local0/www/html/Tay"
 set :scm, 'git'
 set :repository,  "git://github.com/akaestli/tay.git"
 set :branch, 'master'
-#set :scm_verbose, true
-#set :use_sudo, true
-set :use_sudo, false
+set :scm_verbose, true
+set :use_sudo, true
 
 role :web, domain                          # Your HTTP server, Apache/etc
 role :app, domain                          # This may be the same as your `Web` server
