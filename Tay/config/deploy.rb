@@ -6,7 +6,8 @@ set :applicationdir, "/local0/www/html/Tay"
  
 set :scm, 'git'
 set :repository,  "git://github.com/akaestli/tay.git"
-set :git_enable_submodules, 1 # if you have vendored rails
+# changed on jun, 03, 2013
+# set :git_enable_submodules, 1 # if you have vendored rails
 set :branch, 'master'
 set :git_shallow_clone, 1
 set :scm_verbose, true
