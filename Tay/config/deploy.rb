@@ -9,7 +9,7 @@ set :scm, 'git'
 set :repository,  "git://github.com/akaestli/tay.git"
 set :branch, 'master'
 set :scm_verbose, true
-set :use_sudo, false #changed from true on jun 06
+set :use_sudo, true
 
 role :web, domain                          # Your HTTP server, Apache/etc
 role :app, domain                          # This may be the same as your `Web` server
