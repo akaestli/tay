@@ -2,10 +2,10 @@ require 'bundler/capistrano'
 
 #added on june 7 (4 lines below)
 
-$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
-require 'rvm/capistrano'
-set :rvm_ruby_string, '1.9.2'
-set :rvm_bin_path, "/usr/local/rvm/bin"
+#$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
+#require 'rvm/capistrano'
+#set :rvm_ruby_string, '1.9.2'
+#set :rvm_bin_path, "/usr/local/rvm/bin"
 
 set :application, "Tay"
 #set :user, "kaestlal"
