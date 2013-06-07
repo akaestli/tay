@@ -12,6 +12,7 @@ set :application, "Tay"
 set :domain, "microfluidics.ethz.ch"
 #set :applicationdir, "/local0/www/html/Tay"
 set :deploy_to, "/local0/www/html/#{application}"
+set :deploy_via, :remote_cache
  
 default_run_options[:pty] = true 
 set :scm, 'git'
