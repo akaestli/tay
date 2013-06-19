@@ -1,3 +1,3 @@
 Tay
 ===
-I'm eventually going to write some more here....
+This is my first attempt at making a website from scratch.
