@@ -6,7 +6,7 @@ TayGroup::Application.routes.draw do
   match '/people' => 'home#people'
   match '/opportunities' => 'home#opportunities'
   match '/contact' => 'home#contact'
-   match '/people2' => 'home#people2'
+  match '/people2' => 'home#people2'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

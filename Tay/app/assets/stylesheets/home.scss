@@ -16,11 +16,3 @@
      color: #222
  }
 
-@import "compass";
-// This yields a gradient starting at the top with #fff, ending in #aaa
-#v-gradient {
-  @include background-image(linear-gradient(#222, black)); } 
-
-// This yields a gradient starting at the top with #aaa, ending in #fff
-#v_new-gradient {
-  @include background-image(linear-gradient(black, #222)); } 
