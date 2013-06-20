@@ -8,12 +8,14 @@
   thead {color:#222; font-size: 30px}
 	tbody {color: #222;}
 	h1{color: #222; font-size: 50px; font-weight: bold; letter-spacing: +5px; text-align:center;}
+	h2{color: #444444; font-size: 50px; font-weight: bold; letter-spacing: +5px; text-align:right;}
 	th{border-top: 0px; border-bottom: 5px solid #161C40; background-image:url('billie_holiday.png'); letter-spacing: +3px}
 	td{background-color: lightgrey; letter-spacing: +1px}
 	tr{border-bottom: 2px solid #222; background-image:url('billie_holiday.png')}
 	td:hover {background-color: #E8DDCB;}
 </style>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="assets/javascripts/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -51,11 +53,40 @@
 	</div>
 </div>
 
-<div class="row-fluid">
-	<div class="span12">
-		<%= image_tag '/chip_low_res.jpg', :alt => 'cover_1', :style => "height:400px; width: 960px"%> 
-	</div>
+<div id="myCarousel" class="carousel slide container" style="width: 960; margin: 0 auto">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item"></div>
+    	<%= image_tag '/cover_1.jpg', :alt => 'cover_1', :style => "height:400px; width: 960px"%>
+    	<div class="carousel-caption">
+    		<h2 style="color:white">A microfluidics chip.</h2>
+    	</div>
+
+    <div class="item">
+    	<%= image_tag '/people/Alicia_Kaestli.jpg', :alt => 'cover_1', :style => "height:400px; width: 960px"%>
+    	<div class="carousel-caption">
+    		<h2 style="color:white">Photo #2.</h2>
+    	</div>
+    </div>
+    <div class="item">
+    	<%= image_tag '/people/Alicia_Kaestli.jpg', :alt => 'cover_1', :style => "height:400px; width: 960px"%>
+    	<div class="carousel-caption">
+    		<h2 style="color:white">Photo #3.</h2>
+    	</div>
+    </div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+  </div>
 </div>
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel({
+      interval: 2000
+    });
+  });
+</script>
 
 <div class = "row-fluid" style="background-image:url('billie_holiday.png')">
     <div class="span12"></div>
@@ -114,28 +145,6 @@
 	    </li>
 	</ul>  
 </div>
-
-<script>
-$(document).ready(function () {
-
-	$('#nav1').mouseover(
-	  function() {
-	  	$('#img_1').attr({src: "tay_website_v1_topL_flat.jpg"});
-	    $(this).append($("<span> ***</span>"));
-	    $(this).append($("<span> ***</span>"));
-	    $(this).append($("<span> ***</span>"));
-
-	  }, 
-
-	  function () {
-	    $(this).find("span:last").remove();
-	    $(this).find("span:last").remove();
-	  }
-
-	);
-
-});
-</script>
 
 </body>
 </html>
