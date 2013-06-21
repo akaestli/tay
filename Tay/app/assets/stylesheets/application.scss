@@ -21,4 +21,24 @@ $navbarHeight: 50px;
 $navbarLinkColor: #E8DDCB;
 
 
-body{padding-bottom: 5px; padding-top: 50px;}
+body{padding-top: 50px;}
+
+/*
+ * Code below from http://ryanfait.com/
+ */
+
+* {
+margin: 0;
+}
+html, body {
+height: 100%;
+}
+.wrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -0em;
+}
+.footer, .push {
+height: 0em;
+}
