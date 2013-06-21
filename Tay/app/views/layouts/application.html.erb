@@ -8,15 +8,10 @@
   <%= javascript_include_tag "application" %>
   <%= favicon_link_tag 'favicon.ico' %>
   <%= csrf_meta_tags %>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <meta name="viewport" content="width=device-width"> 
    <!-- Bootstrap -->
    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-  
-  <?php echo css('assets/styles/carousel.css') ?>
-  <?php echo js('http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js') ?>
-  <?php echo js('assets/javascripts/bootstrap-transition.js') ?>
-  <?php echo js('assets/javascripts/bootstrap-carousel.js') ?>
-
+   <link href="app/assets/styleshets/application.scss" rel="stylesheet" type="text/css">
   <style type="text/css">
   body{background-image:url('billie_holiday.png')}
   p{color: #222}
@@ -29,23 +24,6 @@
 </head> 
 
 <body>
-  <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <ul class = "nav">
-            <a class="brand" href="/"><strong>Tay Group</strong></a>
-          <li class="divider-vertical"></li>
-          <li><a href="/research"><strong>Reserach</strong></a></li>
-          <li><a href="/news"><strong>News</strong></a></li>
-          <li><a href="/publications"><strong>Publications</strong></a></li>
-          <li><a href="/people"><strong>People</strong></a></li>
-          <li><a href="/opportunities"><strong>Opportunities</strong></a></li>
-          <li><a href="/contact"><strong>Contact</strong></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div class="container">
   <%= yield %>
