@@ -8,6 +8,7 @@ thead {color:#222; font-size: 30px}
 tbody {color: #222;}
 
 h1{color: #222; font-size: 50px; font-weight: bold; letter-spacing: +5px; text-align:center;}
+h4{color: #222; font-size: 15px; font-weight: bold; letter-spacing: +5px; text-align:center;}
 
 th{border-top: 0px; border-bottom: 5px solid #161C40; background-image:url('billie_holiday.png'); letter-spacing: +3px}
 td{background-color: lightgrey; letter-spacing: +1px}
@@ -23,20 +24,27 @@ td:hover a{color:#161C40;}
 
 <body>
   <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <ul class = "nav">
-            <a class="brand" href="/"><strong>Tay Group</strong></a>
-          <li class="divider-vertical"></li>
-          <li><a href="/research"><strong>Research</strong></a></li>
-          <li><a href="/news"><strong>News</strong></a></li>
-          <li class="active"><a href="/publications"><strong>Publications</strong></a></li>
-          <li><a href="/people"><strong>People</strong></a></li>
-          <li><a href="/opportunities"><strong>Opportunities</strong></a></li>
-          <li><a href="/contact"><strong>Contact</strong></a></li>
-        </ul>
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </a>
+        <a class="brand" href="/"><strong>Tay Group</strong></a>
+        <div class="nav-collapse">
+              <ul class="nav">
+            <li class="divider-vertical"></li>
+            <li><a href="/research"><strong>Research</strong></a></li>
+            <li><a href="/news"><strong>News</strong></a></li>
+            <li class="active"><a href="/publications"><strong>Publications</strong></a></li>
+            <li><a href="/people"><strong>People</strong></a></li>
+            <li><a href="/opportunities"><strong>Opportunities</strong></a></li>
+            <li><a href="/contact"><strong>Contact</strong></a></li>
+              </ul>
+          </div>
+        </div>
       </div>
-    </div>
   </div>
 
 <div class = "row-fluid" style="background-image:url('billie_holiday.png')">
@@ -44,9 +52,10 @@ td:hover a{color:#161C40;}
 </div>
 
 <div class="row-fluid">
-	<div class="well-small" style="text-align: center; background-color: lightgrey">
-		<h1>Publications</h1>
-	</div>
+  <div class="well-small" style="text-align: center; background-color: lightgrey">
+    <h1 class="hidden-phone">Publications</h1>
+    <h4 class="visible-phone">Publications</h4>
+  </div>
 </div>
 
 <div class="container-fluid" style="border: 0px; border-color: blue; background-image:url('billie_holiday.png')">
@@ -69,29 +78,23 @@ td:hover a{color:#161C40;}
       <td><br>Tay S, Kellogg R, Bichsel C, Lipniacki T, Quake SR. "Digital time-delayed NF-kappaB dynamics encode endotoxin dose", submitted <br><br></td>
   </tr>
 
-  </tr>
-    <tr>
-      <td>
-        <br>
-        <div class = "row-fluid">
-          <div class="span3">
-            <%= image_tag '/publications/loc_cover_tino.jpg', :alt => '2013_loc_tino', :class => "img-polaroid" %>
-          </div>
+  <tr>
+    <td>
 
-          <div class="span9" style="#position: absolute; #top: 50%;display: table-cell; vertical-align: middle;">
-            Frank T, Tay S. "Flow-switching allows independently programmable, extremely stable, high-throughput diffusion-based gradients". <strong>Lab on a Chip</strong>, 13, 1273 (2013).
-
-            <%= link_to '(Correction)', '/publications/2013_loc_frank_correction.pdf' -%> 
-
-            <br>
-            <i>(Featured cover article)</i>
-            <br>
-            <%= link_to '(FIX)', '/publications/2013_loc_frank_correction.pdf' -%> 
-            <i> HOT article at RSC blog </i>
-
-          </div>
+      <div class="span2">
+        <%= image_tag '/publications/loc_cover_tino.jpg', :alt => 'tino loc cover', :class => "img-polaroid" %> 
       </div>
-    <br><br>
+
+      <div class="span9" style="#position: absolute; #top: 50%;display: table-cell; vertical-align: middle;"><br><br>
+        Frank T, Tay S. "Flow-switching allows independently programmable, extremely stable, high-throughput diffusion-based gradients". <strong>Lab on a Chip</strong>, 13, 1273 (2013).
+        <%= link_to '[PDF]', '/publications/2013_loc_frank.pdf' -%> 
+        <%= link_to '(Correction)', '/publications/2013_loc_frank_correction.pdf' -%> 
+
+        <br><br><br>
+        <i>(Featured cover article)</i>
+        <br><br><br>
+        <i> <%= link_to 'HOT', 'http://blogs.rsc.org/lc/2013/05/03/trio-of-hot-articles-reversible-phase-transitions-super-strong-adhesive-and-flow-switching-for-programmable-gradients/' -%>  article at RSC blog </i>
+      </div>
     </td>
   </tr>
 
@@ -215,6 +218,16 @@ td:hover a{color:#161C40;}
 <div class="footer" style="text-align: center">
     <p>The Tay Group 2013</p>
 </div>
+
+
+<!-- Javascript -->
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
+<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
+
+<script>
+  $(".collapse").collapse()
+</script>
 
 </body>
 </html>

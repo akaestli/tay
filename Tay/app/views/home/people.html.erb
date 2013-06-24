@@ -7,6 +7,7 @@ h1{color: #222; font-size: 50px; font-weight: bold; letter-spacing: +5px; text-a
 p{color: #222}
 h3{color: #222; letter-spacing: +3px; font-weight: bold}
 h5{color: #222;}
+h4{color: #222; font-size: 15px; font-weight: bold; letter-spacing: +5px; text-align:center;}
 img {height: auto; width: 100%; margin-top:0px; margin-bottom: 20px; overvflow: none}
 a {color:#036564;}
 a:hover{color:#036564;}
@@ -47,7 +48,8 @@ a:hover{color:#036564;}
 
 <div class="row-fluid">
   <div class="well-small" style="text-align: center; background-color: lightgrey">
-    <h1>People</h1>
+    <h1 class="hidden-phone">People</h1>
+    <h4 class="visible-phone">People</h4>
   </div>
 </div>
 
@@ -123,11 +125,11 @@ a:hover{color:#036564;}
 <div class = "row-fluid" style="background-color: lightgrey">
 	<div class ="well-large">
 		<div class="span2">
-			<img src="/people/cem.jpg" class = "img-polaroid" style="height:100%">
+			<img src="/people/cem_2.jpg" class = "img-polaroid">
 		</div>
 
 		<div class="span9">
-			<h3 class="lead" style="font-weight: bold">Cem Albayrak, PhD - Postdoc</h3>
+			<h3 class="lead" style="font-weight: bold; height: auto">Cem Albayrak, PhD - Postdoc</h3>
 			<p>cem.albayrak AT bsse.ethz.ch</p>
 			<p>PhD, Chemical Engineering, Stanford University</p>
 			<p>Biology and Chemical Engineering, Massachusettes Institute of Technology, 2005</p>
@@ -291,5 +293,16 @@ a:hover{color:#036564;}
 <div class="footer" style="text-align: center">
     <p>The Tay Group 2013</p>
 </div>
+
+
+<!-- Javascript -->
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
+<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
+
+<script>
+  $(".collapse").collapse()
+</script>
+
 
 </body>
