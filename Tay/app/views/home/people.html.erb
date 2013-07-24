@@ -11,6 +11,7 @@ h4{color: #222; font-size: 15px; font-weight: bold; letter-spacing: +5px; text-a
 img {height: auto; width: 100%; margin-top:0px; margin-bottom: 20px; overvflow: none}
 a {color:#036564;}
 a:hover{color:#036564;}
+.dropdown-backdrop {position: static;}
 </style>
 
 <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
@@ -19,30 +20,38 @@ a:hover{color:#036564;}
 
 <body>
   <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-      	<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-      	</a>
-		<a class="brand" href="/"><strong>Tay Group</strong></a>
-		<div class="nav-collapse">
-	        <ul class="nav">
-				<li class="divider-vertical"></li>
-				<li><a href="/research"><strong>Research</strong></a></li>
-				<li><a href="/news"><strong>News</strong></a></li>
-				<li><a href="/publications"><strong>Publications</strong></a></li>
-				<li class="active"><a href="/people"><strong>People</strong></a></li>
-				<li><a href="/opportunities"><strong>Opportunities</strong></a></li>
-				<li><a href="/contact"><strong>Contact</strong></a></li>
-	        </ul>
-	    </div>
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </a>
+        <a class="brand" href="/"><strong>Tay Group</strong></a>
+        <div class="nav-collapse">
+              <ul class="nav">
+                <li class="divider-vertical"></li>
+                <li class="dropdown">
+                    <a href="/research" class="dropdown-toggle" data-toggle="dropdown"><strong>Research</strong><b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="/research"><strong>Reserach Overview</strong></a></li>
+                      <li class="divider"></li>
+                      <li><a href="/technology"><strong>Technologies</strong></a></li>
+                      <li><a href="/research"><strong>NF-kappaB single-cell data and model</strong></a></li>
+                    </ul>
+                </li>
+                <li><a href="/news"><strong>News</strong></a></li>
+                <li><a href="/publications"><strong>Publications</strong></a></li>
+                <li class="active"><a href="/people"><strong>People</strong></a></li>
+                <li><a href="/opportunities"><strong>Opportunities</strong></a></li>
+                <li><a href="/contact"><strong>Contact</strong></a></li>
+              </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
-<div class = "row-fluid" style="background-image:url('billie_holiday.png')">
+<div class = "row-fluid hidden-phone" style="background-image:url('billie_holiday.png')">
     <div class="span12"></div>
 </div>
 
@@ -69,10 +78,9 @@ a:hover{color:#036564;}
 			<h3 class="lead" style="font-weight: bold">Assistant Professor of Bioengineering</h3>
 			<p>savas.tay AT bsse.ethz.ch</p>
 
-			<p>Dr. Tay is a newly appointed tenure-track assistant professor at the Department of Biosystems Science and Engineering at <a href ="http://www.ethz.ch/index_EN">Swiss Federal Institute of Technology</a>, ETH Zurich. His goal is to understand "how life works" from an engineers perspective. He uses a systems approach to biological research that integrates high-throughput quantitative measurements and mathematical modeling, and develops technologies based on microfluidics and optics to aid this effort. He is also interested in translating such technologies to real-life biomedical applications.
-			<br><br>He received his PhD from the <a href ="http://www.optics.arizona.edu/">College of Optical Sciences at the University of Arizona</a>, USA in 2007. After a short postdoc there, Dr. Tay moved to Stephen Quake's group at <a href ="http://bioengineering.stanford.edu/">Stanford University Bioengineering Department</a>, and Howard Hughes Medical Institute. At Stanford, he worked on systems biology of mammalian cell signaling, using high-throughout microfluidic single-cell imaging and quantitative gene expression techniques. He discovered digital cell activation and analogue information processing in the signaling pathway NF-kappaB under inflammatory signals, and developed a broadly-applicable stochastic computer model of this pathway. 
-			In Arizona, he worked on nonlinear optics, photonics and holographic displays with Nasser Peyghambarian. His achievements in optics include the development of the first updateable holographic 3D display, new infrared sensitive dynamic holographic materials for optical communications, tunable photonic crystal devices and plasmonic thermal IR emitters for biosensing. Previously, he graduated from <a href ="http://www2.marmara.edu.tr/">Marmara University</a>, Istanbul, Turkey with a degree in Physics and Education. 
-			<br><br>Before joining ETH Zurich, Professor Tay has published 6 review and 13 peer-reviewed papers, filed 3 patents, and gave 30 conferences and 25 invited seminars. His works on digital cell signaling and holographic 3D displays (both published in the journal Nature) have attracted significant media coverage. He served as a referee for Nature, Optics Express, Biotechnology and Bioengineering, Journal of Biomedical Optics, Photonics Technology Letters, Polymer and Colloid Science, Optics Communications, Applied Optics and Netherlands Foundation for Fundamental Research.</p>
+			<p>Dr. Tay is tenure-track Assistant Professor of Bioengineering at the Department of Biosystems Science and Engineering at <a href ="http://www.ethz.ch/index_EN">Swiss Federal Institute of Technology</a>, ETH Zurich, since 2011. His personal goal in research is to understand "how life works" from an engineering perspective. Dr. Tay adopts a systems approach to biological research that integrates high-throughput quantitative measurements and mathematical modeling, and develops technologies based on microfluidics and optics to aid this effort. He is also interested in translating such technologies to real-life biomedical applications.
+			<br><br>He received PhD from the <a href ="http://www.optics.arizona.edu/">College of Optical Sciences at the University of Arizona</a>, USA in 2007. After a short postdoc there, Dr. Tay moved to Stephen Quake's group at <a href ="http://bioengineering.stanford.edu/">Stanford University Bioengineering Department</a> and Howard Hughes Medical Institute. At Stanford, he worked on systems biology of mammalian cell signaling, using high-throughout microfluidic single-cell imaging and quantitative gene expression techniques. He discovered digital cell activation and analogue information processing in the signaling pathway NF-kappaB under inflammatory signals, and developed a broadly-applicable stochastic computer model of this pathway. In Arizona, Dr. Tay worked on nonlinear optics, photonics and holographic displays at the group of Nasser Peyghambarian. His achievements in optics include the development of the first updateable holographic 3D display, new infrared sensitive dynamic holographic materials for optical communications, tunable photonic crystal devices and plasmonic thermal IR emitters for biosensing. Previously, he graduated from <a href ="http://www2.marmara.edu.tr/">Marmara University</a>, Istanbul, Turkey with a degree in Physics and Education.
+			<br><br>Dr. Tay has been the recipient of the highly competitive and prestigious European Research Commission ERC Starting Grant in 2013. Before joining ETH Zurich, Professor Tay has published 6 review and 14 peer-reviewed papers, filed 3 patents, and gave 30 conferences and 25 invited seminars. His works on digital cell signaling and holographic 3D displays (both published in the journal Nature) and collective migration of cells (published in PNAS) have attracted significant media coverage. He serves as a referee for scientific journals Nature, Lab on Chip, Plos One, Optics Express, Biotechnology and Bioengineering, Journal of Biomedical Optics, Photonics Technology Letters, Polymer and Colloid Science, Optics Communications, Applied Optics and many funding agencies.</p>
 		</div>
 	</div>
 	<div class = "row-fluid" style="background-color: lightgrey">
@@ -302,6 +310,16 @@ a:hover{color:#036564;}
 
 <script>
   $(".collapse").collapse()
+</script>
+
+<script>
+	$(document).ready(function() {
+	    $('.nav li.dropdown').hover(function() {
+	        $(this).addClass('open');
+	    }, function() {
+	        $(this).removeClass('open');
+	    });
+	});
 </script>
 
 

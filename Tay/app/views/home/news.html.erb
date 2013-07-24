@@ -8,12 +8,13 @@ h1{color: #222; font-size: 50px; font-weight: bold; letter-spacing: +5px; text-a
 h4{color: #222; font-size: 15px; font-weight: bold; letter-spacing: +5px; text-align:center;}
 th{border-top: 0px; border-bottom: 5px solid #161C40; background-image:url('billie_holiday.png'); letter-spacing: +3px}
 td{background-color: lightgrey; letter-spacing: +1px}
-
+.dropdown-backdrop {position: static;}
 tr{border-bottom: 2px solid #222; background-image:url('billie_holiday.png')}
 
 td:hover {background-color: #E8DDCB;}
 a {color:#161C40; font-weight: bold}
 td:hover a{color:#161C40;}
+a.dropdown-toggle { outline: none}
 </style>
 <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
 </head>
@@ -30,20 +31,28 @@ td:hover a{color:#161C40;}
         <a class="brand" href="/"><strong>Tay Group</strong></a>
         <div class="nav-collapse">
               <ul class="nav">
-            <li class="divider-vertical"></li>
-            <li><a href="/research"><strong>Research</strong></a></li>
-            <li class="active"><a href="/news"><strong>News</strong></a></li>
-            <li><a href="/publications"><strong>Publications</strong></a></li>
-            <li><a href="/people"><strong>People</strong></a></li>
-            <li><a href="/opportunities"><strong>Opportunities</strong></a></li>
-            <li><a href="/contact"><strong>Contact</strong></a></li>
+                <li class="divider-vertical"></li>
+                <li class="dropdown">
+                    <a href="/research" class="dropdown-toggle" data-toggle="dropdown">Research<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="/research"><strong>Reserach Overview</strong></a></li>
+                      <li class="divider"></li>
+                      <li><a href="/technology"><strong>Technologies</strong></a></li>
+                      <li><a href="/research"><strong>NF-kappaB single-cell data and model</strong></a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="/news"><strong>News</strong></a></li>
+                <li><a href="/publications"><strong>Publications</strong></a></li>
+                <li><a href="/people"><strong>People</strong></a></li>
+                <li><a href="/opportunities"><strong>Opportunities</strong></a></li>
+                <li><a href="/contact"><strong>Contact</strong></a></li>
               </ul>
           </div>
         </div>
       </div>
     </div>
 
-<div class = "row-fluid" style="background-image:url('billie_holiday.png')">
+<div class = "row-fluid hidden-phone" style="background-image:url('billie_holiday.png')">
     <div class="span12"></div>
 </div>
 
@@ -258,4 +267,15 @@ td:hover a{color:#161C40;}
 <script>
   $(".collapse").collapse()
 </script>
+
+<script>
+  $(document).ready(function() {
+      $('.nav li.dropdown').hover(function() {
+          $(this).addClass('open');
+      }, function() {
+          $(this).removeClass('open');
+      });
+  });
+</script>
+
 </body>
