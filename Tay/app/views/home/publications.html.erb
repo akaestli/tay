@@ -20,6 +20,9 @@ a {color:#161C40; font-weight: bold}
 td:hover a{color:#161C40;}
 a.dropdown-toggle { outline: none}
 .dropdown-backdrop {position: static;}
+.dropdown-menu > li > a:hover {
+    color:#E8DDCB;
+    background:#031634;}
 </style>
 <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
 </head>
@@ -244,12 +247,10 @@ a.dropdown-toggle { outline: none}
 </script>
 
 <script>
-  $(document).ready(function() {
-      $('.nav li.dropdown').hover(function() {
-          $(this).addClass('open');
-      }, function() {
-          $(this).removeClass('open');
-      });
+  $('.navbar .dropdown').hover(function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+  }, function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
   });
 </script>
 

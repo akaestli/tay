@@ -1,20 +1,23 @@
 <head>
 <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
-thead {color:#222; font-size: 30px}
-tbody {color: #222;}
+  thead {color:#222; font-size: 30px}
+  tbody {color: #222;}
+  h1{color: #222; font-size: 50px; font-weight: bold; letter-spacing: +5px; text-align:center;}
+  h4{color: #222; font-size: 15px; font-weight: bold; letter-spacing: +5px; text-align:center;}
+  th{border-top: 0px; border-bottom: 5px solid #161C40; background-image:url('billie_holiday.png'); letter-spacing: +3px}
+  td{background-color: lightgrey; letter-spacing: +1px}
+  .dropdown-backdrop {position: static;}
+  tr{border-bottom: 2px solid #222; background-image:url('billie_holiday.png')}
 
-h1{color: #222; font-size: 50px; font-weight: bold; letter-spacing: +5px; text-align:center;}
-h4{color: #222; font-size: 15px; font-weight: bold; letter-spacing: +5px; text-align:center;}
-th{border-top: 0px; border-bottom: 5px solid #161C40; background-image:url('billie_holiday.png'); letter-spacing: +3px}
-td{background-color: lightgrey; letter-spacing: +1px}
-.dropdown-backdrop {position: static;}
-tr{border-bottom: 2px solid #222; background-image:url('billie_holiday.png')}
-
-td:hover {background-color: #E8DDCB;}
-a {color:#161C40; font-weight: bold}
-td:hover a{color:#161C40;}
-a.dropdown-toggle { outline: none}
+  td:hover {background-color: #E8DDCB;}
+  a {color:#161C40; font-weight: bold}
+  td:hover a{color:#161C40;}
+  a.dropdown-toggle { outline: none}
+  .dropdown-menu > li > a:hover {
+      color:#E8DDCB;
+      background:#031634;}
+</style>
 </style>
 <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
 </head>
@@ -269,12 +272,10 @@ a.dropdown-toggle { outline: none}
 </script>
 
 <script>
-  $(document).ready(function() {
-      $('.nav li.dropdown').hover(function() {
-          $(this).addClass('open');
-      }, function() {
-          $(this).removeClass('open');
-      });
+  $('.navbar .dropdown').hover(function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+  }, function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
   });
 </script>
 
