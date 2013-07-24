@@ -12,32 +12,4 @@
  *= require_tree .
  */
 
-$navbarPadding: 0px;
-$navbarLinkColorHover: #E8DDCB;
-$navbarBackgroundHighlight: #031634;
-$navbarBackground: #033649;
-$navbarText: #E8DDCB;
-$navbarHeight: 50px;
-$navbarLinkColor: #E8DDCB;
-
 body{padding-bottom: 20px; padding-top: 50px;}
-
-/*
- * Code below from http://ryanfait.com/
- */
-
-* {
-margin: 0;
-}
-html, body {
-height: 100%;
-}
-.wrapper {
-min-height: 100%;
-height: auto !important;
-height: 100%;
-margin: 0 auto -4em;
-}
-.footer, .push {
-height: 4em;
-}
