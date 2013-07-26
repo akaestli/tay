@@ -2,6 +2,7 @@ TayGroup::Application.routes.draw do
   get "home/index"
   match '/research' => 'home#research'
   match '/technology' => 'home#technology'
+  match '/model' => 'home#model'
   match '/news' => 'home#news'
   match '/publications' => 'home#publications'
   match '/people' => 'home#people'

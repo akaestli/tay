@@ -17,7 +17,7 @@
   td:hover {background-color: #E8DDCB;}
   a {color: white; font-weight: bold}
   td a{color:#161C40; font-weight: bold}}
-  td:hover a{color:#161C40;}
+  td:hover a{color:red;}
   a.dropdown-toggle {outline: none}
   .dropdown-backdrop {position: static;}
   .dropdown-menu > li > a:hover {
@@ -49,7 +49,7 @@
 	                      <li><a href="/research"><strong>Reserach Overview</strong></a></li>
 	                      <li class="divider"></li>
 	                      <li><a href="/technology"><strong>Technologies</strong></a></li>
-	                      <li><a href="/research"><strong>NF-&#954B Single-Cell Data and Model</strong></a></li>
+	                      <li><a href="/model"><strong>NF-&#954B Single-Cell Data and Model</strong></a></li>
 	                    </ul>
 	                </li>
 	                <li><a href="/news"><strong>News</strong></a></li>
@@ -104,9 +104,17 @@
 	    	<%= image_tag '/home/tino_chip_1.jpg', :alt => 'gradient', :style => 'max-width: 100%'%>
 	    	<div class="carousel-caption">
 	    		<h2><a href="research" style="color:white">Microfluidic Gradients</a></h2>
-				<p style="color:white">We developed a new microfluidic chip that creates and maintains stable, diffusion based spatial gradients of signaling molecules such as morphogens or chemokines. We are using this technology to investigate spatial patterning of 2D and 3D tissue and cells. This system is especially suited for studies of cell migration and development. <%= link_to '[PDF]', '/publications/2013_loc_frank.pdf' -%></p>
+				<p style="color:white">We developed a new microfluidic chip that creates and maintains stable, diffusion based spatial gradients of signaling molecules such as morphogens or chemokines. We are using this technology to investigate spatial patterning of 2D and 3D tissue and cells. This system is especially suited for studies of cell migration and development. <%= link_to '[PDF]', '/publications/2013_loc_frank.pdf', {:style => 'color: white; font-weight: bold'} -%></p>
 			</div>
           </div>
+
+          <div class="item">
+	    	<%= image_tag '/home/trapped_macrophage.jpg', :alt => 'gradient', :style => 'max-width: 100%'%>
+		    	<div class="carousel-caption">
+		    		<h2><a href="research" style="color:white">Single Cell Trap</a></h2>
+					<p style="color:white">A single cell captured in a cell trap.</p>
+				</div>
+          	</div>
 
 		  </div>
 
