@@ -1,5 +1,5 @@
 <head>
-<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 h1{color: #222; font-size: 50px; font-weight: bold; letter-spacing: +5px; text-align:center;}
 p{color: #222}
@@ -20,7 +20,7 @@ table.center {
     color:#E8DDCB;
     background:#031634;}
 </style>
-<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -41,7 +41,7 @@ table.center {
                     <ul class="dropdown-menu">
                       <li><a href="/research"><strong>Reserach Overview</strong></a></li>
                       <li class="divider"></li>
-                      <li><a href="/technology"><strong>Technologies</strong></a></li>
+                      <li><a href="/technology"><strong>Technologies and Capabilities</strong></a></li>
                       <li><a href="/model"><strong>NF-&#954B Single-Cell Data and Model</strong></a></li>
                     </ul>
                 </li>
@@ -63,7 +63,6 @@ table.center {
 <div class="row-fluid">
   <div class="well-small" style="text-align: center; background-color: lightgrey">
     <h1 class="hidden-phone">Research</h1>
-    <h4 class="visible-phone">Research</h4>
   </div>
 </div>
 
@@ -85,45 +84,26 @@ table.center {
   <div class = "row-fluid" style="background-color: lightgrey">
       <h3 class="lead">Systems Immunology and Cell Signaling</h3>
       <div class = "row-fluid" style="background-color: lightgrey">
-        <p class="span12" style="color:black">We are interested in cell-cell communication during immune response to infection. <strong>NF-kappaB</strong> is a central innate immune pathway that responds to hundreds of signals including cytokines and pathogens, and controls the expression of thousands of genes. We previously investigated NF-kappaB dynamics at the <strong>single-cell</strong> level using <strong>high-throughput microfluidic microscopy</strong> and quantitative gene expression (Tay et al. <strong>Nature</strong> 466, 267) <%= link_to '[PDF]', '/publications/2010_Nature_Tay.pdf' -%>. Contrary to what bulk assays show, we discovered that single-cell responses are highly heterogeneous, both in cell activation probability and dynamics of the NF-kappaB transcription factor, as well as downstream gene expression dynamics. The input signal intensity  (i.e. cytokine concentration) determines the probability of activation, response time and the duration of NF-kappaB oscillations, but not the intensity of the response (i.e. nuclear translocation amplitude), therefore termed <strong>digital activation</strong>. We also showed that digital signaling propagates to downstream target genes, with early genes activating digitally and late genes activating in analog, concentration dependent fashion.<br><br>To understand the underlying mechanisms and to predict complex signaling scenarios, we developed a stochastic computer model of the NF-kappaB pathway based on our comprehensive single-cell data. This is the most broadly applicable and accurate model of the NF-kappaB pathway to date, reproducing great majority of the observed characteristics under all input signal levels. We are using this model as a test-bed for future experiments and discoveries.<br><br>Future directions in our lab include the investigation of the mechanisms behind stochastic and digital activation, and the emergent properties of this complex signaling scheme in pathogen-host interactions and tissue inflammation. For this effort, we combined probably the <strong>most powerful arsenal of single-cell analytical tools</strong> in the world, namely high-throughput automated microfluidic cell culture, automated live cell imaging and tracking, high-throughput single-cell gene expression (qPCR) and digital-PCR, and single-cell digital protein counting. This pipeline, applied to cells expressing fluorescent fusion proteins and reporters, can generate terabytes of dynamic single-cell data every week, with unprecedented degree of control, accuracy and reproducibility. Using these awesome tools, we are investigating the spatio-temporal emergent properties of digital cell activation. New technologies based on <strong>microfluidics</strong> and <strong>optogenetics</strong> will also be developed to simulate these scenarios. Our previous single-cell model will be expanded and used to guide further experimental studies.</p>
+        <p style="color:black">We are interested in cell-cell communication during immune response to infection. <strong>NF-kappaB</strong> is a central innate immune pathway that responds to hundreds of signals including cytokines and pathogens, and controls the expression of thousands of genes. We previously investigated NF-kappaB dynamics at the <strong>single-cell</strong> level using <strong>high-throughput microfluidic microscopy</strong> and quantitative gene expression (Tay et al. <strong>Nature</strong> 466, 267) <%= link_to '[PDF]', '/publications/2010_Nature_Tay.pdf' -%>. Contrary to what bulk assays show, we discovered that single-cell responses are highly heterogeneous, both in cell activation probability and dynamics of the NF-kappaB transcription factor, as well as downstream gene expression dynamics. The input signal intensity  (i.e. cytokine concentration) determines the probability of activation, response time and the duration of NF-kappaB oscillations, but not the intensity of the response (i.e. nuclear translocation amplitude), therefore termed <strong>digital activation</strong>. We also showed that digital signaling propagates to downstream target genes, with early genes activating digitally and late genes activating in analog, concentration dependent fashion.<br><br>To understand the underlying mechanisms and to predict complex signaling scenarios, we developed a stochastic computer model of the NF-kappaB pathway based on our comprehensive single-cell data. This is the most broadly applicable and accurate model of the NF-kappaB pathway to date, reproducing great majority of the observed characteristics under all input signal levels. We are using this model as a test-bed for future experiments and discoveries.<br><br>Future directions in our lab include the investigation of the mechanisms behind stochastic and digital activation, and the emergent properties of this complex signaling scheme in pathogen-host interactions and tissue inflammation. For this effort, we combined probably the <strong>most powerful arsenal of single-cell analytical tools</strong> in the world, namely high-throughput automated microfluidic cell culture, automated live cell imaging and tracking, high-throughput single-cell gene expression (qPCR) and digital-PCR, and single-cell digital protein counting. This pipeline, applied to cells expressing fluorescent fusion proteins and reporters, can generate terabytes of dynamic single-cell data every week, with unprecedented degree of control, accuracy and reproducibility. Using these awesome tools, we are investigating the spatio-temporal emergent properties of digital cell activation. New technologies based on <strong>microfluidics</strong> and <strong>optogenetics</strong> will also be developed to simulate these scenarios. Our previous single-cell model will be expanded and used to guide further experimental studies.</p>
       </div>
 
       <div class = "row-fluid" style="background-color: lightgrey">
-      <div class="span12"></div>
-      </div>
-     
-    <div class = "row-fluid" style="background-color: lightgrey">
-      <div class="span3">
-        <img src="lab_photos/01_Confocal.jpg" class = "img-polaroid">
-      </div>
-
-      <div class="span9">
-        <h3 class="lead" style="font-weight: bold">Confocal Microscope</h3>
-        <p>We have automated wide-field fluorescence microscopy capabilities in our lab that is used for live-cell imaging and quantification of cells and proteins. We also have access to the state-of-the-art cell culture grade confocal microscopy systems and the single-cell facility. We are currently integrating microfluidics and automation to these systems.</p>
-      </div>
-    </div>
-    
-    <div class = "row-fluid" style="background-color: lightgrey">
         <div class="span12"></div>
-    </div>
-    
-    <div class = "row-fluid" style="background-color: lightgrey">
-
-      <div class="span3">
-        <img src="lab_photos/03_Robot.jpg" class = "img-polaroid">
       </div>
 
-      <div class="span9">
-        <h3 class="lead" style="font-weight: bold">Robotics</h3>
-        <p>We use custom software and hardware to automate our microscopes and microfluidic chips to perform tedious pipetting and imaging tasks efficiently. We automate cell loading, cell feeding, stimulation and time-lapse imaging steps to save us time and manpower. We also have access to the pipetting robot and the lab automation facility at the D-BSSE for large scale screens and cloning.</p>
+      <img src="research/overview.jpg" class="col-6 col-offset-3">
+      
+      <div class = "row-fluid" style="background-color: lightgrey">
+        <div class="span12"></div>
       </div>
-    <div class = "row-fluid" style="background-color: lightgrey">
-      <div class="span12"></div>
-    </div>
-    
-    </div>
-    </div>
+
+      <p style="color:black">We are also investigating how brain stem cells differentiate into neurons in the during mammalian forebrain development. We use a combination of microfluidic single-cell imaging, genetic analysis and computational modeling. This project is funded through SystemsX program of the Swiss SNF. More information can be found in this <%= link_to 'website', 'http://www.brainstemx.org/' -%>.</p>
+
+      <div class = "row-fluid" style="background-color: lightgrey">
+        <div class="span12"></div>
+      </div>
   </div>
+</div>
 
   <div class = "row-fluid" style="background-image:url('billie_holiday.png')">
     <div class="span12"></div>
@@ -139,26 +119,9 @@ table.center {
 
       <div class = "row-fluid" style="background-color: lightgrey">
       <div class="span12"></div>
-      </div>
-
-      <div class = "row-fluid" style="background-color: lightgrey">
-      <div class="span3">
-        <img src="lab_photos/06_Illumina.jpg" class = "img-polaroid">
-      </div>
-
-      <div class="span9">
-        <h3 class="lead" style="font-weight: bold">Illumina</h3>
-        <p>We have access to deep seequencing/RNA sequencing (Illumina) at the D-BSSE genomics facility. We plan to use RNA-sequencing for large-scale gene expression screens and combine it with the microfluidic capabilities of the Fluidigm Biomark q-PCR, cell sorting and microfluidic cell culture and single-cell analysis. </p>
-      </div>
-
-      
-    <div class = "row-fluid" style="background-color: lightgrey">
-      <div class="span12"></div>
-    </div>
-    
+      </div>  
     </div>
     </div>
-  </div>
 
   <div class = "row-fluid" style="background-image:url('billie_holiday.png')">
     <div class="span12"></div>
@@ -223,8 +186,7 @@ table.center {
 
 <!-- Javascript -->
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
-<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
 
 <script>
   $(".collapse").collapse()

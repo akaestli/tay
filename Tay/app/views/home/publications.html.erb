@@ -1,7 +1,7 @@
 <html>
 <head>
 
-<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
 <style type="text/css">
 thead {color:#222; font-size: 30px}
@@ -24,7 +24,6 @@ a.dropdown-toggle { outline: none}
     color:#E8DDCB;
     background:#031634;}
 </style>
-<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
 </head>
 
 <body>
@@ -45,7 +44,7 @@ a.dropdown-toggle { outline: none}
                     <ul class="dropdown-menu">
                       <li><a href="/research"><strong>Reserach Overview</strong></a></li>
                       <li class="divider"></li>
-                      <li><a href="/technology"><strong>Technologies</strong></a></li>
+                      <li><a href="/technology"><strong>Technologies and Capabilities</strong></a></li>
                       <li><a href="/model"><strong>NF-&#954B Single-Cell Data and Model</strong></a></li>
                     </ul>
                 </li>
@@ -67,7 +66,6 @@ a.dropdown-toggle { outline: none}
 <div class="row-fluid">
   <div class="well-small" style="text-align: center; background-color: lightgrey">
     <h1 class="hidden-phone">Publications</h1>
-    <h4 class="visible-phone">Publications</h4>
   </div>
 </div>
 
@@ -85,7 +83,7 @@ a.dropdown-toggle { outline: none}
 </thead>
 <tbody>
   <tr>
-      <td><br>Pekalski J, Zuk PJ, Junkin M, Kellogg R, Tay S, Lipniacki T. Stochastic NF-kappaB activation via autocrine TNFalpha signaling. Under review, <strong>PLOS One</strong><br><br></td>
+      <td><br>Pekalski J, Zuk PJ, Junkin M, Kellogg R, Tay S, Lipniacki T. "Stochastic NF-kappaB activation via autocrine TNFalpha signaling." Under review, <strong>PLOS One</strong><br><br></td>
   </tr>
     <tr>
       <td><br>Tay S, Kellogg R, Bichsel C, Lipniacki T, Quake SR. "Digital time-delayed NF-kappaB dynamics encode endotoxin dose", submitted <br><br></td>
@@ -103,16 +101,16 @@ a.dropdown-toggle { outline: none}
         <%= link_to '[PDF]', '/publications/2013_loc_frank.pdf' -%> 
         <%= link_to '(Correction)', '/publications/2013_loc_frank_correction.pdf' -%> 
 
-        <br><br><br>
+        <br><br>
         <i>(Featured cover article)</i>
-        <br><br><br>
+        <br><br>
         <i> <%= link_to 'HOT', 'http://blogs.rsc.org/lc/2013/05/03/trio-of-hot-articles-reversible-phase-transitions-super-strong-adhesive-and-flow-switching-for-programmable-gradients/' -%>  article at RSC blog </i>
       </div>
     </td>
   </tr>
 
   <tr>
-    	<td><br>S. Vedel,* S. Tay,* D. Johnston, H. Bruus, S. R. Quake (*equal contribution). "Migration of cells in social context". Accepted, <strong>PNAS</strong> (Nov 2012) <%= link_to '[PDF]', '/publications/2012_pnas.pdf' -%><br><br></td>
+    	<td><br>S. Vedel,* S. Tay,* D. Johnston, H. Bruus, S. R. Quake. "Migration of cells in social context". <strong>PNAS</strong>, 110, 129 (2013) (*equal contribution) <%= link_to '[PDF]', '/publications/2012_pnas.pdf' -%><br><br></td>
 	</tr>
 </tbody>
 
@@ -123,7 +121,7 @@ a.dropdown-toggle { outline: none}
 </thead>
 <tbody>
   	<tr>
-    	<td><br>S. Tay,* J. J. Hughey,* T. K. Lee, T. Lipniacki, S. R. Quake, M. W. Covert (*equal contribution) “Single-cell NF-kappaB dynamics reveal digital activation and analogue information processing.” <strong>Nature</strong>, 466, 267 (2010) 
+    	<td><br>S. Tay,* J. J. Hughey,* T. K. Lee, T. Lipniacki, S. R. Quake, M. W. Covert. “Single-cell NF-kappaB dynamics reveal digital activation and analogue information processing.” <strong>Nature</strong>, 466, 267 (2010) (*equal contribution)
 
     		<%= link_to '[PDF]', '/publications/2010_Nature_Tay.pdf' -%>
 
@@ -234,9 +232,7 @@ a.dropdown-toggle { outline: none}
 
 
 <!-- Javascript -->
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
-<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
 
 <script>
   $(".collapse").collapse()

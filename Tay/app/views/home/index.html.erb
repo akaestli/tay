@@ -2,8 +2,7 @@
 <!-- Made by Alicia J. Kaestli, last updated on 2013/7/26 !-->
 <html lang="en">
 <head>
-<link href="app/assets/styleshets/application.scss" rel="stylesheet" type="text/css">
-<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
 <style type="text/css">
   h1{color: #CCC; font-size: 50px; font-weight: bold; letter-spacing: +5px}
   h4{color: #CCC; font-size: 15px; font-weight: bold; letter-spacing: +5px}
@@ -48,7 +47,7 @@
 	                    <ul class="dropdown-menu">
 	                      <li><a href="/research"><strong>Reserach Overview</strong></a></li>
 	                      <li class="divider"></li>
-	                      <li><a href="/technology"><strong>Technologies</strong></a></li>
+	                      <li><a href="/technology"><strong>Technologies and Capabilities</strong></a></li>
 	                      <li><a href="/model"><strong>NF-&#954B Single-Cell Data and Model</strong></a></li>
 	                    </ul>
 	                </li>
@@ -84,7 +83,7 @@
 
 		  <!-- Carousel items -->
 		  <div class="carousel-inner">
-		    
+
 		    <div class="active item">
 		    	<%= image_tag '/home/group.jpg', :alt => 'group', :style => 'max-width: 100%'%>
 		    	<div class="carousel-caption">
@@ -158,6 +157,11 @@
 	    </tr>
 	  </thead>
 	  <tbody>
+
+	    <tr>
+	        <td><br><%= link_to 'Turkish Radio and Television News', 'http://www.trthaber.com/haber/bilim-teknik/turk-bilim-insanina-buyuk-odul-94665.html' -%> covered Savas Tay's prestigious <%= link_to 'ERC Starting Grant', 'http://erc.europa.eu/starting-grants' -%> award. (July 2013)</div><br><br></td>
+	    </tr>
+
 	    <tr>
 	        <td>
 
@@ -203,16 +207,14 @@
 
 <!-- Javascript -->
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
-<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-carousel.js"></script>
-<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
-<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 
 <script>
   !function ($) {
     $(function(){
       // carousel demo
-      $('#myCarousel').carousel()
+      $('#myCarousel').carousel({
+      interval: 60000
     })
   }(window.jQuery)
 </script>

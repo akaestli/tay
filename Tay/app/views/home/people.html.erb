@@ -1,7 +1,6 @@
 <head>
-<link href="app/assets/styleshets/application.scss" rel="stylesheet" type="text/css">
-<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-
+<link href="/assets/styleshets/application.scss" rel="stylesheet" type="text/css">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 h1{color: #222; font-size: 50px; font-weight: bold; letter-spacing: +5px; text-align:center}
 p{color: #222}
@@ -18,9 +17,6 @@ a.dropdown-toggle { outline: none}
     color:#E8DDCB;
     background:#031634;}
 </style>
-
-<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -41,7 +37,7 @@ a.dropdown-toggle { outline: none}
                     <ul class="dropdown-menu">
                       <li><a href="/research"><strong>Reserach Overview</strong></a></li>
                       <li class="divider"></li>
-                      <li><a href="/technology"><strong>Technologies</strong></a></li>
+                      <li><a href="/technology"><strong>Technologies and Capabilities</strong></a></li>
                       <li><a href="/model"><strong>NF-&#954B Single-Cell Data and Model</strong></a></li>
                     </ul>
                 </li>
@@ -63,7 +59,6 @@ a.dropdown-toggle { outline: none}
 <div class="row-fluid">
   <div class="well-small" style="text-align: center; background-color: lightgrey">
     <h1 class="hidden-phone">People</h1>
-    <h4 class="visible-phone">People</h4>
   </div>
 </div>
 
@@ -75,7 +70,7 @@ a.dropdown-toggle { outline: none}
 <div class = "row-fluid" style="background-color: lightgrey">
 	<div class ="well-large">
 		<div class="span3">
-			<%= image_tag '/people/Savas_Tay.jpeg', :alt => 'Savas_Tay', :class => "img-polaroid", :style => "height:auto; width: auto"%> 
+			<%= image_tag '/people/savas_tay.jpg', :alt => 'Savas_Tay', :class => "img-polaroid", :style => "height:auto; width: auto"%> 
 		</div>
 
 		<div class="span9">
@@ -99,7 +94,7 @@ a.dropdown-toggle { outline: none}
 
 <div class = "row-fluid" style="background-color: lightgrey">
 	<div class ="well-large">
-		<div class="span2">
+		<div class="span3">
 			<img src="/people/Brigitta_Elhadj.jpeg" class = "img-polaroid">
 		</div>
 
@@ -114,19 +109,18 @@ a.dropdown-toggle { outline: none}
     <div class="span12"></div>
 </div>
 
-<div class = "row-fluid" style="background-color: lightgrey">
-	<div class ="well-large">
-		<div class="span2">
+<div class = "row" style="background-color: lightgrey">
+	<div class ="well well-large">
+		<div class="col-2">
 			<img src="/people/Michael_Junkin.jpg" class = "img-polaroid">
 		</div>
 
-		<div class="span9">
+		<div class="col-9">
 			<h3 class="lead" style="font-weight: bold">Michael Junkin, PhD - Postdoc</h3>
 			<p>michael.junkin AT bsse.ethz.ch</p>
 			<p>PhD, Aerospace and Mechanical Engineering, Biomedical Engineering, University of Arizona, 2011</p>
 			<p>MS, Mechanical Engineering, University of Arizona, 2008</p>
 			<p>BS, Mechanical Engineering, Virginia Tech, 2002 (summa cum laude)</p>
-
 		</div>
 	</div>
 </div>
@@ -156,7 +150,7 @@ a.dropdown-toggle { outline: none}
 
 <div class = "row-fluid" style="background-color: lightgrey">
 	<div class ="well-large">
-		<div class="span2">
+		<div class="span3">
 			<img src="/people/Matthias_Mehling.jpg" class = "img-polaroid">
 		</div>
 
@@ -175,7 +169,7 @@ a.dropdown-toggle { outline: none}
 
 <div class = "row-fluid" style="background-color: lightgrey">
 	<div class ="well-large">
-		<div class="span2">
+		<div class="span3">
 			<img src="/people/ryan.jpg" class = "img-polaroid">
 		</div>
 
@@ -194,7 +188,7 @@ a.dropdown-toggle { outline: none}
 
 <div class = "row-fluid" style="background-color: lightgrey">
 	<div class ="well-large">
-		<div class="span2">
+		<div class="span3">
 			<img src="/people/Tino_Frank.jpg" class = "img-polaroid">
 		</div>
 
@@ -213,7 +207,7 @@ a.dropdown-toggle { outline: none}
 
 <div class = "row-fluid" style="background-color: lightgrey">
 	<div class ="well-large">
-		<div class="span2">
+		<div class="span3">
 			<img src="/people/ozlem.jpg" class = "img-polaroid">
 		</div>
 
@@ -232,7 +226,7 @@ a.dropdown-toggle { outline: none}
 
 <div class = "row-fluid" style="background-color: lightgrey">
 	<div class ="well-large">
-		<div class="span2">
+		<div class="span3">
 			<img src="/people/Alicia_Kaestli.jpg" class = "img-polaroid">
 		</div>
 
@@ -251,7 +245,7 @@ a.dropdown-toggle { outline: none}
 
 <div class = "row-fluid" style="background-color: lightgrey">
 	<div class ="well-large">
-		<div class="span2">
+		<div class="span3">
 			<img src="/people/kurt.jpg" class = "img-polaroid">
 		</div>
 
@@ -269,7 +263,7 @@ a.dropdown-toggle { outline: none}
 
 <div class = "row-fluid" style="background-color: lightgrey">
 	<div class ="well-large">
-		<div class="span2">
+		<div class="span3">
 			<img src="/people/onur.jpg" class = "img-polaroid">
 		</div>
 
@@ -287,7 +281,7 @@ a.dropdown-toggle { outline: none}
 
 <div class = "row-fluid" style="background-color: lightgrey">
 	<div class ="well-large">
-		<div class="span2">
+		<div class="span3">
 			<img src="/people/jordich.png" class = "img-polaroid">
 		</div>
 
@@ -318,10 +312,10 @@ a.dropdown-toggle { outline: none}
 			</thead>
 			<tbody>
 				<tr>
-					<td>Colette Bichsel</td>
-					<td>Jan 2012 - Dec 2012</td>
-					<td>Graduate Student</td>
-					<td>Graduate Student at University of Bern</td>
+					<td>Name</td>
+					<td>Dates</td>
+					<td>Position in Tay Lab</td>
+					<td>Current Position</td>
 				</tr>
 			</tbody>
 		</table>
@@ -339,8 +333,7 @@ a.dropdown-toggle { outline: none}
 
 <!-- Javascript -->
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
-<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
 
 <script>
   $(".collapse").collapse()

@@ -1,167 +1,185 @@
+<!DOCTYPE html>
+<!-- Made by Alicia J. Kaestli, last updated on 2013/7/26 !-->
+<html lang="en">
 <head>
-<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="app/assets/styleshets/application.scss" rel="stylesheet" type="text/css">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <style type="text/css">
-thead {color:#222; font-size: 30px}
-tbody {color: #222;}
 
-h1{color: #222; font-size: 50px; font-weight: bold; letter-spacing: +5px; text-align:center;}
-h4{color: #222; font-size: 15px; font-weight: bold; letter-spacing: +5px; text-align:center;}
+/* bootstrap 3 helpers */
 
+.navbar-form input, .form-inline input {
+	width:auto;
+}
 
-th{border-top: 0px; border-bottom: 5px solid #161C40; background-image:url('billie_holiday.png'); letter-spacing: +3px}
-td{background-color: lightgrey; letter-spacing: +1px}
+/* end */
 
-tr{border-bottom: 2px solid #222; background-image:url('billie_holiday.png')}
+/* custom theme */
 
-td:hover {background-color: #E8DDCB;}
-a {color:#161C40; font-weight: bold}
-td:hover a{color:#161C40;}
+header {
+	min-height:230px;
+  	margin-bottom:5px;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+      position: static;
+  }
+  
+  #sidebar.affix {
+      position: fixed;
+      top: 0;
+      width:21.2%;
+  }
+}
+
+.affix,.affix-top {
+   position:static;
+}
+
+/* theme */
+
+body {
+  color:#828282;
+  background-color:#eee;
+}
+
+a,a:hover {
+	color:#ff3333;
+  	text-decoration:none;
+}
+
+.highlight-bk {
+	background-color:#ff3333;
+    padding:1px;
+    width:100%;
+}
+
+.highlight {
+	color:#ff3333;
+}
+  
+h3.highlight  {
+	padding-top:13px;
+    padding-bottom:14px;
+  	border-bottom:2px solid #ff3333;
+}
+
+.navbar {
+	background-color:#ff3333;
+  	color:#ffffff;
+  	border-radius:0;
+}
+.navbar-nav > li > a {
+  	color:#fff;
+  	padding-left:20px;
+  	padding-right:20px;
+  	border-left:1px solid #ffffff;
+}
+.navbar-nav > li:last-child > a {
+  	border-right:1px solid #ffffff;
+}
+.navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+	background-color:transparent;
+}
+.navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus {
+	color: #555555;
+	background-color:transparent;
+  	opacity:.9;
+}
+
+.accordion-group {
+	border-width:0;
+}
+
+.dropdown-menu {
+	min-width: 250px;
+}
+
+.accordion-heading .accordion-toggle, .accordion-inner, .nav-stacked li > a {
+	padding-left:1px;
+}
+
+.caret {
+	color:#fff;
+}
+
+.navbar-toggle {
+	color:#fff;
+    border-width:0;
+}
+  
+.navbar-toggle:hover {
+	background-color:#fff;
+}
+
+.panel {
+	padding-left:27px;
+    padding-right:27px;
+}
+
+/* end theme */
 </style>
-<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+
 </head>
 
 <body>
-  <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-          </a>
-        <a class="brand" href="/"><strong>Tay Group</strong></a>
-        <div class="nav-collapse">
-              <ul class="nav">
-            <li class="divider-vertical"></li>
-            <li><a href="/research"><strong>Research</strong></a></li>
-            <li><a href="/news"><strong>News</strong></a></li>
-            <li><a href="/publications"><strong>Publications</strong></a></li>
-            <li><a href="/people"><strong>People</strong></a></li>
-            <li class="active"><a href="/opportunities"><strong>Opportunities</strong></a></li>
-            <li><a href="/contact"><strong>Contact</strong></a></li>
+<!-- Begin Navbar -->
+<div class="navbar navbar-static">
+    <div class="container">
+      <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="glyphicon glyphicon-chevron-down"></span>
+      </a>
+      <div class="nav-collapse collapse">
+        <ul class="nav navbar-nav">  
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+        <ul class="nav pull-right navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+            <ul class="dropdown-menu" style="padding:12px;">
+                <form class="form-inline">
+     				<button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button><input type="text" class="form-control pull-left" placeholder="Search">
+                </form>
               </ul>
-          </div>
-        </div>
-      </div>
-  </div>
-
-<div class = "row-fluid" style="background-image:url('billie_holiday.png')">
-    <div class="span12"></div>
-</div>
-
-<div class="row-fluid">
-  <div class="well-small" style="text-align: center; background-color: lightgrey">
-    <h1 class="hidden-phone">Opportunities</h1>
-    <h4 class="visible-phone">Opportunities</h4>
-  </div>
-</div>
-
-<div class = "row-fluid" style="background-image:url('billie_holiday.png')">
-    <div class="span12"></div>
-</div>
-
-<div class="container-fluid" style="border: 0px; background-color: lightgrey">
-  <div class = "row-fluid" style="background-color: lightgrey">
-    <div class = "well-large">
-      <h3 class="lead">Post Doctoral Postition 1: Cell Signaling and Single-Cell Analysis</h3>
-      <p>We are looking for postdocs who fit the following profiles:</p>
-      <ol>
-        <li><em>A biologist/computational biologist who has experience with cell signaling and the systems biological approach.</em> This person will have the privilege of using a state-of-the-art high-throughput microfluidic cell culture system and gene expression systems (<%= link_to 'Fluidigm', 'http://www.fluidigm.com/home.html' -%>) at Tay Lab to investigate NF-kappaB dynamics in single cells. These systems was recently used in this paper: "Single-cell NF-kappaB dynamics reveal digital activation and analogue information processing", Tay et al. Nature 466, 267-271 <a href = "/publications/2010_Nature_Tay.pdf"> [PDF]</a>.</li>
-        <br>
-        <li><em>An engineer or physicist who has experience with microfluidics</em> and its biological applications. The focus of this position will be developing microfluidic/optofluidic systems for single-cell analysis in systems biology and biomedical applications.</li>
-      </ol>
-      <p><em>In all cases, a strong publication record is expected.</em></p>
-      <p>ETH Zurich provides excellent benefits and the salary is 82,000 CHF a year.<br><br>Highly motivated candidates should send research interests, full CV including details of experimental and computational skills, publications, and contact information for 3 references  to: savas.tay AT gmail.com</p>
-      <br>
-  </div>
-</div>
-</div>
-
-<div class = "row-fluid" style="background-image:url('billie_holiday.png')">
-  <div class="span12"></div>
-</div>
-
-<div class="container-fluid" style="border: 0px; background-color: lightgrey">
-  <div class = "row-fluid" style="background-color: lightgrey">
-    <div class = "well-large">
-      <h3 class="lead">Post Doctoral Postition 2: Systems Analysis of Mammalian Forebrain Development</h3>
-      <p>Tay Group at the Department of Biosystems Science and Engineering of the Swiss Institute of Technology, <em>ETH Zurich</em>, invites applications from prospective postdoctoral fellows. The successful candidate will work in a collaborative initiative between the two institutions (ETH Zurich and University of Basel) to <em>study the development of the mammalian brain at the molecular and cellular systems level using single-cell dynamical analysis</em>. The consortium is looking for highly motivated and experienced candidates ranging from cell and molecular biologists to those with experienced in cell and tissue engineering and computational modeling. The project is based in Basel Switzerland and the successful candidate is expected to help build a strong dynamic and interdisciplinary team between basic research, engineers and computational biologists. More information on the project and teams involved can be found in <%= link_to 'www.brainstemx.org', 'www.brainstemx.org' -%> and in <%= link_to 'www.bsse.ethz.ch/microfluidics', 'www.bsse.ethz.ch/microfluidics' -%>.</p>
-      <br>
-      <p>We are looking for a postdoc with background in experimental biology or bioengineering, who is interested in using the worlds most advanced microfluidic systems for cell culture, live cell dynamic imaging and gene expression analysis to investigate the spatiotemporal signaling events during mammalian forebrain development. Relevant skills include basic programming (preferably in Matlab). Excellence in research evidenced by a <em>strong track record of publications</em> is expected.</p>
-      <br>
-      <p>ETH Zurich is a highly ranked institute in Europe, and offers a highly competitive salary and benefits for postdoctoral fellows. Applications should be addressed to Prof. Savas Tay (savas.tay AT gmail.com).</p>
-      <br>
-  </div>
-</div>
-</div>
-
-<div class = "row-fluid" style="background-image:url('billie_holiday.png')">
-  <div class="span12"></div>
-</div>
-
-<div class="container-fluid" style="border: 0px; background-color: lightgrey">
-  <div class = "row-fluid" style="background-color: lightgrey">
-    <div class = "well-large">
-      <h3 class="lead">Post Doctoral Fellowships Opportunities</h3>
-      <p>Postdoctoral researchers who wish to join our lab are also encouraged to apply to the ETH or SystemsX postdoctoral fellowships. <br>ETH and SystemsX fellowships are quite prestigious and carry a good salary. The decisions are made within 3 months latest. Postdocs interested in pursuing this direction should contact Savas Tay <u> a month before the deadlines below </u>:<br><br> ETH postdoctoral fellowship can be in any field, and the deadlines are March 1, Sept 1 of every year. More information can be found<a href ="http://www.vpf.ethz.ch/services/ETH_Fellows/"> here</a>.<br><br>Systems X postdoc positions are typically for computational biologists who are willing to pursue research in systems biology, be it experimental or computational. Deadlines are announced in current calls for proposals, and are typically in January. More info can be found <a href="http://www.systemsx.ch/projects/systemsxch-projects/">here</a>.</p>
-      <br>
-  </div>
-</div>
-</div>
-
-<div class = "row-fluid" style="background-image:url('billie_holiday.png')">
-  <div class="span12"></div>
-</div>
-
-<div class="container-fluid" style="border: 0px; background-color: lightgrey">
-  <div class = "row-fluid" style="background-color: #lightgrey">
-    <div class = "well-large">
-    <h3 class="lead">PhD Postitions</h3>
-    <div class = "row-fluid" style="background-color: #lightgrey">
-      <p class="span12">Applications are invited for an opening at the Systems Biology and Bioengineering Group with Professor Savas Tay. The following paper is an example of our current research: "Single-cell NF-kappaB dynamics reveal digital activation and analogue information processing", Tay et al. Nature 466, 267-271 <a href = "http://www.nature.com/nature/journal/v466/n7303/pdf/nature09145.pdf"> [PDF]</a>. Also see the following reviews on this research:
-      Nature web focus on biological noise
-      Biotechniques.com: in signaling, not all cells are equal 
-      
-      <br><br>ETH Zurich is the top ranked research university in continental Europe, offering an excellent environment for innovative and collaborative research across disciplines. Our department is strategically located in Basel, a major European hub of biomedical research. We are in an excellent position to collaborate with various departmental groups on synthetic biology, epigenetics, developmental biology, computational biology and bioengineering. Furthermore, main ETH campus, nearby Friedrich Mischer Institute, Biozentrum at the University of Basel, and pharmaceutical industry will provide ample collaborations on immunology, cancer research, drug development and instrumentation. Our alumni can expect to acquire a wide range of skills, to publish high-impact papers in systems biology and engineering, and be in an excellent position to transition into academic or industrial careers.
-      We are looking for a student who has experience in one of the following areas: cell signaling-systems biology, microfluidics, bio-instrumentation or computational modeling of signaling pathways. Relevant skills are mammalian cell culture techniques, multilayer soft lithography, cleanroom microfabication techniques, computerized control of instruments and electronics. Experience with Matlab programming is desired. ETH Zurich requires that you hold a Masters degree to join the PhD program. Applications are done directly to the professor. Language of education and research is English.
-      <br><br>Highly motivated and dedicated students should send an application package with research interests, full CV with experimental and computational skills listed in detail, names and contact information of 3 references in a single PDF file to Savas Tay (savas.tay AT bsse.ethz.ch).</p>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> <i class="glyphicon glyphicon-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Profile</a></li>
+              <li class="divider"></li>
+              <li><a href="#">About</a></li>
+             </ul>
+          </li>  
+        </ul>
+      </div>		
     </div>
-  </div>
-</div>
-</div>
-
-<div class = "row-fluid" style="background-image:url('billie_holiday.png')">
-  <div class="span12"></div>
-</div>
-
-<div class="container-fluid" style="border: 0px; background-color: lightgrey">
-  <div class = "row-fluid" style="background-color: #lightgrey">
-    <div class = "well-large">
-    <h3 class="lead">Masters Student Positions</h3>
-
-    <div class = "row-fluid" style="background-color: #lightgrey">
-      <p class="span12">We are interested in working with highly motivated and energetic MS students from a variety of backgrounds, including Biotechnology, Engineering, Physics, Biology, and Computer Science. Projects on microfluidics, single-cell analysis, cell signaling and biosensors are available. Highly motivated, dedicated and energetic students interested in doing their thesis work at Tay Group should send their CV to Savas Tay (savas.tay AT bsse.ethz.ch). <break> Note: MS students are self-funded at ETH Zurich (unfortunately our group can not provide financial assistance for MS students). Exceptional candidates are encouraged to apply to the Masters Excellence scholarship which covers tuition and monthly stipend up to CHF 1750. More information can be found at the <a href = "http://www.rektorat.ethz.ch/students/finance/scholarship/excellence/index_EN"> ETH Scholarship Office.</a></p>
-    </div>
-  </div>
-</div>
-</div>
-
-<div class = "row-fluid" style="background-image:url('billie_holiday.png')">
-  <div class="span12"></div>
-</div>
-
-<div class="footer" style="text-align: center">
-    <p>The Tay Group 2013</p>
-</div>
-
+</div><!-- /.navbar -->
 
 <!-- Javascript -->
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
-<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+    $('.carousel').carousel({
+        interval: 60000
+    });
 
 <script>
-  $(".collapse").collapse()
+	$(".collapse").collapse()
+</script>
+
+<script>
+	$('.navbar .dropdown').hover(function() {
+	  $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+	}, function() {
+	  $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
+	});
 </script>
 
 </body>
+</html>

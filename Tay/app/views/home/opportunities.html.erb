@@ -1,5 +1,5 @@
 <head>
-<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 thead {color:#222; font-size: 30px}
 tbody {color: #222;}
@@ -22,7 +22,6 @@ a.dropdown-toggle { outline: none}
     color:#E8DDCB;
     background:#031634;}
 </style>
-<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
 </head>
 
 <body>
@@ -43,7 +42,7 @@ a.dropdown-toggle { outline: none}
                     <ul class="dropdown-menu">
                       <li><a href="/research"><strong>Reserach Overview</strong></a></li>
                       <li class="divider"></li>
-                      <li><a href="/technology"><strong>Technologies</strong></a></li>
+                      <li><a href="/technology"><strong>Technologies and Capabilities</strong></a></li>
                       <li><a href="/model"><strong>NF-&#954B Single-Cell Data and Model</strong></a></li>
                     </ul>
                 </li>
@@ -65,7 +64,6 @@ a.dropdown-toggle { outline: none}
 <div class="row-fluid">
   <div class="well-small" style="text-align: center; background-color: lightgrey">
     <h1 class="hidden-phone">Opportunities</h1>
-    <h4 class="visible-phone">Opportunities</h4>
   </div>
 </div>
 
@@ -131,9 +129,8 @@ a.dropdown-toggle { outline: none}
     <div class = "well-large">
     <h3 class="lead">PhD Postitions</h3>
     <div class = "row-fluid" style="background-color: #lightgrey">
-      <p class="span12">Applications are invited for an opening at the Systems Biology and Bioengineering Group with Professor Savas Tay. The following paper is an example of our current research: "Single-cell NF-kappaB dynamics reveal digital activation and analogue information processing", Tay et al. Nature 466, 267-271 <a href = "http://www.nature.com/nature/journal/v466/n7303/pdf/nature09145.pdf"> [PDF]</a>. Also see the following reviews on this research:
-      Nature web focus on biological noise
-      Biotechniques.com: in signaling, not all cells are equal 
+      <p class="span12">Applications are invited for an opening at the Systems Biology and Bioengineering Group with Professor Savas Tay. The following paper is an example of our current research: "Single-cell NF-kappaB dynamics reveal digital activation and analogue information processing", Tay et al. Nature 466, 267-271 <a href = "http://www.nature.com/nature/journal/v466/n7303/pdf/nature09145.pdf"> [PDF]</a>. Also see the following reviews on this research:<br>
+     <%= link_to 'In signaling, not all cells are equal', 'http://www.biotechniques.com/news/In-signaling-not-all-cells-are-equal/biotechniques-300195.html' -%><br><%= link_to 'Biotechniques.com: in signaling, not all cells are equal ', 'http://www.biotechniques.com'-%>
       
       <br><br>ETH Zurich is the top ranked research university in continental Europe, offering an excellent environment for innovative and collaborative research across disciplines. Our department is strategically located in Basel, a major European hub of biomedical research. We are in an excellent position to collaborate with various departmental groups on synthetic biology, epigenetics, developmental biology, computational biology and bioengineering. Furthermore, main ETH campus, nearby Friedrich Mischer Institute, Biozentrum at the University of Basel, and pharmaceutical industry will provide ample collaborations on immunology, cancer research, drug development and instrumentation. Our alumni can expect to acquire a wide range of skills, to publish high-impact papers in systems biology and engineering, and be in an excellent position to transition into academic or industrial careers.
       We are looking for a student who has experience in one of the following areas: cell signaling-systems biology, microfluidics, bio-instrumentation or computational modeling of signaling pathways. Relevant skills are mammalian cell culture techniques, multilayer soft lithography, cleanroom microfabication techniques, computerized control of instruments and electronics. Experience with Matlab programming is desired. ETH Zurich requires that you hold a Masters degree to join the PhD program. Applications are done directly to the professor. Language of education and research is English.
@@ -169,9 +166,7 @@ a.dropdown-toggle { outline: none}
 
 
 <!-- Javascript -->
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
-<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
 
 <script>
   $(".collapse").collapse()
