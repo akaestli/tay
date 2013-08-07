@@ -10,7 +10,7 @@
   .dropdown-backdrop {position: static;}
   tr{border-bottom: 2px solid #222; background-image:url('billie_holiday.png')}
 
-  td:hover {background-color: #E8DDCB;}
+  td:hover {background-color: #eeeeee;}
   a {color:#161C40; font-weight: bold}
   td:hover a{color:#161C40;}
   a.dropdown-toggle { outline: none}
@@ -38,7 +38,6 @@
                     <a href="/research" class="dropdown-toggle" style="background-color: #fafafa;background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);background-repeat: repeat-x;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);*zoom: 1;" data-toggle="dropdown"><strong>Research</strong><b class="caret"></b></a>
                     <ul class="dropdown-menu">
                       <li><a href="/research"><strong>Reserach Overview</strong></a></li>
-                      <li class="divider"></li>
                       <li><a href="/technology"><strong>Technologies and Capabilities</strong></a></li>
                       <li><a href="/model"><strong>NF-&#954B Single-Cell Data and Model</strong></a></li>
                     </ul>
@@ -58,8 +57,8 @@
 </div>
 
 <div class="row-fluid">
-  <div class="well-small" style="text-align: center; background-color: lightgrey">
-    <h1 class="hidden-phone">News</h1>
+  <div class="well-small" style="text-align: center; background-color: #021537">
+    <h1 class="hidden-phone" style="color:#E8DDCB">News</h1>
   </div>
 </div>
 
@@ -95,7 +94,7 @@
             <%= image_tag '/publications/loc_cover_tino.jpg', :alt => 'tino loc cover', :class => "img-polaroid" %> 
           </div>
 
-          <div class="span10"><br><br><br><br><br><%= link_to 'Tino\'s paper', '/publications/2013_loc_frank.pdf' -%> is published as a feature article in Lab on a Chip (January 2013)</div><br><br></td>
+          <div class="span10"><br><br><br><br><%= link_to 'Tino\'s paper', '/publications/2013_loc_frank.pdf' -%> is published as a feature article in Lab on a Chip (January 2013)</div><br><br></td>
     </tr>
     <tr>
         <td><br>ETH Z&uumlrich is <%= link_to 'ranked', 'http://www.timeshighereducation.co.uk/world-university-rankings/2012-13/world-ranking/range/001-200' -%> 12th overall, and 8th in engineering, with a steady upward movement in the last decade.<br><br></td>
@@ -258,9 +257,13 @@
 </div>
 </div>
 
-<div class="footer" style="text-align: center">
-    <p>The Tay Group 2013</p>
-</div>
+  <div id = "footer" class="hidden-sm">
+    <div class = "container">
+      <div class = "row-fluid">
+          <p class="span2 offset5">The Tay Group 2013</p>
+      </div>
+    </div>
+  </div>
 
 
 <!-- Javascript -->

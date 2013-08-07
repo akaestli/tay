@@ -2,6 +2,7 @@
 <!-- Made by Alicia J. Kaestli, last updated on 2013/7/26 !-->
 <html lang="en">
 <head>
+<link href="app/assets/styleshets/application.scss" rel="stylesheet" type="text/css">
 <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
 <style type="text/css">
   h1{color: #CCC; font-size: 50px; font-weight: bold; letter-spacing: +5px}
@@ -13,15 +14,20 @@
   th{border-top: 0px; border-bottom: 5px solid #161C40; background-image:url('billie_holiday.png'); letter-spacing: +3px}
   td{background-color: lightgrey; letter-spacing: +1px}
   tr{border-bottom: 2px solid #222; background-image:url('billie_holiday.png')}
-  td:hover {background-color: #E8DDCB;}
+  td:hover {background-color: #eeeeee;}
   a {color: white; font-weight: bold}
   td a{color:#161C40; font-weight: bold}}
-  td:hover a{color:red;}
   a.dropdown-toggle {outline: none}
   .dropdown-backdrop {position: static;}
   .dropdown-menu > li > a:hover {
       color:#E8DDCB;
       background:#031634;}
+  #footer{
+    position:absolute;
+    left:0;
+    right:0;
+    height:100px;
+    background:#eeeeee; border-top: 1px solid lightgrey; padding-top: 80px; padding-bottom: 100px}
 </style>
 
 <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
@@ -46,8 +52,7 @@
 	                    <a href="/research" class="dropdown-toggle" style="background-color: #fafafa;background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);background-repeat: repeat-x;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);*zoom: 1;" data-toggle="dropdown"><strong>Research</strong><b class="caret"></b></a>
 	                    <ul class="dropdown-menu">
 	                      <li><a href="/research"><strong>Reserach Overview</strong></a></li>
-	                      <li class="divider"></li>
-	                      <li><a href="/technology"><strong>Technologies and Capabilities</strong></a></li>
+	                      <li><a href="/technology"><strong>Technologies</strong></a></li>
 	                      <li><a href="/model"><strong>NF-&#954B Single-Cell Data and Model</strong></a></li>
 	                    </ul>
 	                </li>
@@ -56,6 +61,10 @@
 	                <li><a href="/people"><strong>People</strong></a></li>
 	                <li><a href="/opportunities"><strong>Opportunities</strong></a></li>
 	                <li><a href="/contact"><strong>Contact</strong></a></li>
+	                <ul class="nav pull-right">
+                    	<li class="divider-vertical"></li>
+             			<a class="brand" href="http://www.ethz.ch/index_EN"><img src="/home/eth_logo.jpg" style="max-height:30px"></a>
+                    </ul>
 	              </ul>
 	          </div>
 	        </div>
@@ -113,7 +122,14 @@
 		    		<h2><a href="research" style="color:white">Single Cell Trap</a></h2>
 					<p style="color:white">A single cell captured in a cell trap.</p>
 				</div>
-          	</div>
+          </div>
+
+          <div class="item">
+	    	<%= image_tag '/home/gradient_cells_1.jpg', :alt => 'gradient', :style => 'max-width: 100%'%>
+		    	<div class="carousel-caption">
+		    		<h2><a href="research" style="color:white">3T3 Cells in a TNF-&#945 Gradient</a></h2>
+				</div>
+          </div>
 
 		  </div>
 
@@ -158,10 +174,9 @@
 	  </thead>
 	  <tbody>
 
-	    <tr>
-	        <td><br><%= link_to 'Turkish Radio and Television News', 'http://www.trthaber.com/haber/bilim-teknik/turk-bilim-insanina-buyuk-odul-94665.html' -%> covered Savas Tay's prestigious <%= link_to 'ERC Starting Grant', 'http://erc.europa.eu/starting-grants' -%> award. (July 2013)</div><br><br></td>
-	    </tr>
-
+	  	<tr>
+        	<td><br><%= link_to 'Turkish Radio and Television News', 'http://www.trthaber.com/haber/bilim-teknik/turk-bilim-insanina-buyuk-odul-94665.html' -%> covered Savas Tay's prestigious <%= link_to 'ERC Starting Grant', 'http://erc.europa.eu/starting-grants' -%> award. (July 2013)</div><br><br></td>
+        </tr>
 	    <tr>
 	        <td>
 
@@ -198,25 +213,32 @@
 	</table>
 	</div>
 
-	<div class="footer" style="text-align: center">
-	    <p>The Tay Group 2013</p>
+    <div class = "row-fluid hidden-phone" style="background-image:url('billie_holiday.png')">
+    	<div class="span12"></div>
 	</div>
 
-	<div class="push"></div>
+	<div id = "footer" class="hidden-phone">
+	  <div class = "container">
+	    <div class = "row-fluid">
+	        <p class="span2 offset5">The Tay Group 2013</p>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="footer visible-phone" style="text-align: center">
+    	<p>The Tay Group 2013</p>
+	</div>
 </div>
 
 <!-- Javascript -->
 <script type="text/javascript" src="jquery.js"></script>
-<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<!-- Need to keep 3.0.0 RC1 javascript with bootstrap 2.3.2 css in order for dropdown menu to work in navbar -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
 
 <script>
-  !function ($) {
-    $(function(){
-      // carousel demo
-      $('#myCarousel').carousel({
-      interval: 60000
-    })
-  }(window.jQuery)
+	$('#myCarousel').carousel({
+  interval: 7000 // in milliseconds
+})
 </script>
 
 <script>
