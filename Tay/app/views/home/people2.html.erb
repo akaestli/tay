@@ -2,183 +2,237 @@
 <!-- Made by Alicia J. Kaestli, last updated on 2013/7/26 !-->
 <html lang="en">
 <head>
-<link href="app/assets/styleshets/application.scss" rel="stylesheet" type="text/css">
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <style type="text/css">
-
-/* bootstrap 3 helpers */
-
-.navbar-form input, .form-inline input {
-	width:auto;
+  h1{color: #CCC; font-size: 50px; font-weight: bold; letter-spacing: +5px}
+  h4{color: #CCC; font-size: 15px; font-weight: bold; letter-spacing: +5px}
+  body{font-size: 13px; line-height: 18px; letter-spacing: +2px}
+  .carousel {margin: -1px 0 0 -1px;}
+  thead {color:#222; font-size: 30px}
+  tbody {color: #222;}
+  th{border-top: 0px; border-bottom: 5px solid #161C40; background-image:url('billie_holiday.png'); letter-spacing: +3px}
+  td{background-color: lightgrey; letter-spacing: +1px}
+  tr{border-bottom: 2px solid #222; background-image:url('billie_holiday.png')}
+  td:hover {background-color: #eeeeee;}
+  a {color: white; font-weight: bold}
+  td a{color:#161C40; font-weight: bold}}
+  a.dropdown-toggle {outline: none}
+  .dropdown-backdrop {position: static;}
+  .dropdown-menu > li > a:hover {
+      color:#E8DDCB;
+      background:#031634;}
+  #footer{
+    position:absolute;
+    left:0;
+    right:0;
+    height:300px;
+    background:#eeeeee; border-top: 1px solid lightgrey; padding-top: 80px; padding-bottom: 100px}
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
-
-/* end */
-
-/* custom theme */
-
-header {
-	min-height:230px;
-  	margin-bottom:5px;
-}
-
-@media (min-width: 979px) {
-  #sidebar.affix-top {
-      position: static;
-  }
-  
-  #sidebar.affix {
-      position: fixed;
-      top: 0;
-      width:21.2%;
-  }
-}
-
-.affix,.affix-top {
-   position:static;
-}
-
-/* theme */
-
-body {
-  color:#828282;
-  background-color:#eee;
-}
-
-a,a:hover {
-	color:#ff3333;
-  	text-decoration:none;
-}
-
-.highlight-bk {
-	background-color:#ff3333;
-    padding:1px;
-    width:100%;
-}
-
-.highlight {
-	color:#ff3333;
-}
-  
-h3.highlight  {
-	padding-top:13px;
-    padding-bottom:14px;
-  	border-bottom:2px solid #ff3333;
-}
-
-.navbar {
-	background-color:#ff3333;
-  	color:#ffffff;
-  	border-radius:0;
-}
-.navbar-nav > li > a {
-  	color:#fff;
-  	padding-left:20px;
-  	padding-right:20px;
-  	border-left:1px solid #ffffff;
-}
-.navbar-nav > li:last-child > a {
-  	border-right:1px solid #ffffff;
-}
-.navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
-    color: #ffffff;
-	background-color:transparent;
-}
-.navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus {
-	color: #555555;
-	background-color:transparent;
-  	opacity:.9;
-}
-
-.accordion-group {
-	border-width:0;
-}
-
-.dropdown-menu {
-	min-width: 250px;
-}
-
-.accordion-heading .accordion-toggle, .accordion-inner, .nav-stacked li > a {
-	padding-left:1px;
-}
-
-.caret {
-	color:#fff;
-}
-
-.navbar-toggle {
-	color:#fff;
-    border-width:0;
-}
-  
-.navbar-toggle:hover {
-	background-color:#fff;
-}
-
-.panel {
-	padding-left:27px;
-    padding-right:27px;
-}
-
-/* end theme */
 </style>
 
 </head>
 
 <body>
-<!-- Begin Navbar -->
-<div class="navbar navbar-static">
-    <div class="container">
+<div class="navbar-wrapper">
+  <div class="container">
+
+    <div class="navbar navbar-fixed-top">
+      <div class="container">
       <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="glyphicon glyphicon-chevron-down"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
       </a>
-      <div class="nav-collapse collapse">
-        <ul class="nav navbar-nav">  
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-        </ul>
-        <ul class="nav pull-right navbar-nav">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
-            <ul class="dropdown-menu" style="padding:12px;">
-                <form class="form-inline">
-     				<button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button><input type="text" class="form-control pull-left" placeholder="Search">
-                </form>
-              </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> <i class="glyphicon glyphicon-chevron-down"></i></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Login</a></li>
-              <li><a href="#">Profile</a></li>
-              <li class="divider"></li>
-              <li><a href="#">About</a></li>
-             </ul>
-          </li>  
-        </ul>
-      </div>		
+        <a class="navbar-brand" href="/"><strong>Tay Group</strong></a>
+        <div class="nav-collapse collapse">
+          <ul class="nav navbar-nav">
+                  <li class="divider-vertical"></li>
+                  <li class="dropdown">
+                      <a href="/research" class="dropdown-toggle" data-toggle="dropdown"><strong>Research</strong><b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/research"><strong>Reserach Overview</strong></a></li>
+                        <li><a href="/technology"><strong>Technologies</strong></a></li>
+                        <li><a href="/model"><strong>NF-&#954B Single-Cell Data and Model</strong></a></li>
+                      </ul>
+                  </li>
+                  <li><a href="/news"><strong>News</strong></a></li>
+                  <li><a href="/publications"><strong>Publications</strong></a></li>
+                  <li><a href="/people"><strong>People</strong></a></li>
+                  <li><a href="/opportunities"><strong>Opportunities</strong></a></li>
+                  <li><a href="/contact"><strong>Contact</strong></a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+    <div class = "row-fluid hidden-phone" style="background-image:url('billie_holiday.png')">
+        <div class="span12"></div>
     </div>
-</div><!-- /.navbar -->
+
+    <div class="container">
+      <div class="row-fluid" class="span12">
+          <div style="text-align: center; background: #031634">
+            <h1 style="color: #E8DDCB; font-size: 50px; font-weight: bold; letter-spacing: +5px; line-height: 1.5; text-align:center;">Tay Group</h1>
+            <h3 style="color:#E8DDCB; text-align:center; letter-spacing: +2px; padding-bottom: 5px">Systems Biology and Bioengineering</h3>
+      </div>
+    </div>
+
+    <div id="myCarousel" class="carousel slide container">
+
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+
+        <div class="active item">
+          <%= image_tag '/home/group.jpg', :alt => 'group', :style => 'max-width: 100%'%>
+          <div class="carousel-caption">
+            <h2><a href="people" style="color:white">Tay Group Photo in July 2013</a></h2>
+        </div>
+        </div>
+
+      <div class="item">
+          <%= image_tag '/home/button_chip.jpg', :alt => 'button', :style => 'max-width: 100%'%>
+          <div class="carousel-caption">
+            <h2><a href="research" style="color:white">Single Cell Microfluidics</a></h2>
+          <p style="color:white"></p>
+        </div>
+      </div>
+
+        <div class="item">
+        <%= image_tag '/home/tino_chip_1.jpg', :alt => 'gradient', :style => 'max-width: 100%'%>
+        <div class="carousel-caption">
+          <h2><a href="research" style="color:white">Microfluidic Gradients</a></h2>
+        <p style="color:white">We developed a new microfluidic chip that creates and maintains stable, diffusion based spatial gradients of signaling molecules such as morphogens or chemokines. We are using this technology to investigate spatial patterning of 2D and 3D tissue and cells. This system is especially suited for studies of cell migration and development. <%= link_to '[PDF]', '/publications/2013_loc_frank.pdf', {:style => 'color: white; font-weight: bold'} -%></p>
+      </div>
+          </div>
+
+          <div class="item">
+        <%= image_tag '/home/trapped_macrophage.jpg', :alt => 'gradient', :style => 'max-width: 100%'%>
+          <div class="carousel-caption">
+            <h2><a href="research" style="color:white">Single Cell Trap</a></h2>
+          <p style="color:white">A single cell captured in a cell trap.</p>
+        </div>
+          </div>
+
+          <div class="item">
+        <%= image_tag '/home/gradient_cells_1.jpg', :alt => 'gradient', :style => 'max-width: 100%'%>
+          <div class="carousel-caption">
+            <h2><a href="research" style="color:white">3T3 Cells in a TNF-&#945 Gradient</a></h2>
+        </div>
+          </div>
+
+      </div>
+
+
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+      </div>
+    </div>
+
+  <div class = "row-fluid" style="background-image:url('billie_holiday.png')">
+    <div class="span12"></div>
+  </div>
+
+  <div class ="row-fluid">
+  <table class = "table">
+    <thead>
+      <tr>
+      <div class="container">
+        <div class="row-fluid" class="span12">
+            <div style="text-align: center; background: #031634">
+              <h3 style="color:#E8DDCB; text-align:center; letter-spacing: +2px">Recent News</h3>
+          </div>
+        </div>
+  </div>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+          <td><br><%= link_to 'Turkish Radio and Television News', 'http://www.trthaber.com/haber/bilim-teknik/turk-bilim-insanina-buyuk-odul-94665.html' -%> covered Savas Tay's prestigious <%= link_to 'ERC Starting Grant', 'http://erc.europa.eu/starting-grants' -%> award. (July 2013)</div><br><br></td>
+        </tr>
+      <tr>
+          <td>
+
+            <div class="span2 hidden-phone">
+              <%= image_tag '/news/erc.jpg', :alt => 'erc logo', :class => "img-polaroid hidden-phone" %> 
+            </div>
+
+            <div class="span10 hidden-phone"><br class="hidden-phone"><br class="hidden-phone">Savas Tay was awarded the prestigious <%= link_to 'ERC Starting Grant', 'http://erc.europa.eu/starting-grants' -%> with the proposal titled "SingleCellDynamics: Optofluidic toolkit for systems immunology" (June 2013)<br class="hidden-phone"><br class="hidden-phone"></div>
+
+        </td>
+      </tr>
+      <tr>
+          <td>
+
+            <div class="span2">
+              <%= image_tag '/publications/loc_cover_tino.jpg', :alt => 'tino loc cover'%> 
+            </div>
+
+            <div class="span10"><br><%= link_to 'Tino\'s paper', '/publications/2013_loc_frank.pdf' -%> is published as a feature article in Lab on a Chip (January 2013)<br></div>
+        </td>
+        </td>
+      </tr>
+      <tr>
+          <td><br>ETH Z&uumlrich is <%= link_to 'ranked', 'http://www.timeshighereducation.co.uk/world-university-rankings/2012-13/world-ranking/range/001-200' -%> 12th overall, and 8th in engineering, with a steady upward movement in the last decade.<br><br></td>
+      </tr>
+
+      <tr>
+          <td><p><a href="news" class="btn offset3 span6" style="text-align:center">More News</a></p><br class="hidden-phone"></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+    <div class = "row-fluid hidden-phone" style="background-image:url('billie_holiday.png')">
+      <div class="span12"></div>
+  </div>
+
+  <div id = "footer" class="hidden-phone">
+    <div class = "container">
+      <div class = "row-fluid">
+        <a class="span2" href="http://www.bsse.ethz.ch/"><img src="/home/D-BSSE_logo.jpg"></a>
+          <p class="span3 offset3"><br><br><br>The Tay Group 2013</p>
+          <a class="span2 offset2" href="http://www.ethz.ch/index_EN"><br><br><br><img src="/home/eth_logo.jpg"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer visible-phone" style="text-align: center">
+      <p>The Tay Group 2013</p>
+  </div>
+</div>
 
 <!-- Javascript -->
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
-
-<script type="text/javascript">
-    $('.carousel').carousel({
-        interval: 60000
-    });
+<script src="http://code.jquery.com/jquery.js"></script>
+<!-- Need to keep 3.0.0 RC1 javascript with bootstrap 2.3.2 css in order for dropdown menu to work in navbar -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
 
 <script>
-	$(".collapse").collapse()
+  $('#myCarousel').carousel({
+  interval: 7000 // in milliseconds
+})
 </script>
 
 <script>
-	$('.navbar .dropdown').hover(function() {
-	  $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
-	}, function() {
-	  $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
-	});
+  $(".collapse").collapse()
+</script>
+
+<script>
+  $('.navbar .dropdown').hover(function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+  }, function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
+  });
 </script>
 
 </body>
