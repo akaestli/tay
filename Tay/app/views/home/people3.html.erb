@@ -1,153 +1,263 @@
 <!DOCTYPE html>
-<html>
+<!-- Made by Alicia J. Kaestli, last updated on 2013/7/26 !-->
+<html lang="en">
 <head>
-  <style>
-  ul { margin-left:20px; color:blue; }
-  li { cursor:default; }
-  span { color:red; }
-</style>
-
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-</head>
-
-<body>
-
-<div class="navbar navbar-fixed-top">
-<div class="navbar-inner">
-  <div class="container">
-    <ul class = "nav">
-        <a class="brand" href="/"><strong>Tay Group</strong></a>
-      <li class="divider-vertical"></li>
-      <li><a href="/research" id="nav1"><strong>Reserach</strong></a></li>
-      <li><a href="/news" id="nav2"><strong>News</strong></a></li>
-      <li><a href="/publications" id="nav3"><strong>Publications</strong></a></li>
-      <li><a href="/people" id="nav4"><strong>People</strong></a></li>
-      <li><a href="/opportunities" id="nav5"><strong>Opportunities</strong></a></li>
-      <li><a href="/contact" id="nav6"><strong>Contact</a></li>
-    </ul>
-  </div>
-</div>
-</div>
-
-<div class="container-fluid">
-	<div class = "row-fluid">
-	  <div class="span12"></div>
-	</div>
-	<div class="row-fluid">
-		<div class="span8 offset2">
-			<div class="well-small" style="text-align: center; background: black">
-				<h1 id="awesome" style="color: #CCC; font-size: 50px; font-weight: bold; letter-spacing: +5px; line-height: 1.5; text-align:center; ">Tay Group</h1>
-				<h3 style="color:#CCC; text-align:center; letter-spacing: +2px">Systems Biology and Bioengineering</h>
-			</div>
-		</div>
-
-		<div class="row-fluid">
-			<div class="span8 offset2" style="text-align: center">
-					<img id="img_1" src="http://placehold.it/900x700/ffffff/OOOOOO"></img>
-			</div>
-		</div>
-	</div>
-</div>
-
-<script>
-$(document).ready(function () {
-
-	$('#nav1').hover(
-	  function () {
-	  	$('#awesome').append($("<img src='tay_website_v1_topL_flat.jpg'></img>"));
-	  	$('#img_1').attr({src: "tay_website_v1_topL_flat.jpg"});
-	    $(this).append($("<span> ***</span>"));
-	  }, 
-
-	  function () {
-	    $(this).find("span:last").remove();
-	    $(this).find("span:last").remove();
-	  }
-
-	);
-
-
-
-
-});
-</script>
-
-</body>
-</html>
-
-
-****************************
-
-<!DOCTYPE html>
-<!-- Made by Alicia J. Kaeslti, last updated on 2013/1/3 !-->
-<html>
-<head>
-
+<link href="/assets/styleshets/application.scss" rel="stylesheet" type="text/css">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0css/bootstrap.min.css" rel="stylesheet">
 <style type="text/css">
-  h1{color: #CCC; font-size: 50px; font-weight: bold; letter-spacing: +5px}
-  body{font-size: 13px; line-height: 18px; letter-spacing: +2px}
-</style>
+h1{color: #222; font-size: 50px; font-weight: bold; letter-spacing: +5px; text-align:center}
+p{color: #222}
+h3{color: #222; font-weight: bold}
+h5{color: #222;}
+h4{color: #222; font-size: 15px; font-weight: bold; letter-spacing: +5px; text-align:center;}
+img {height: auto; max-width:150px; margin-top:0px; margin-bottom: 20px; overvflow: none}
+a {color:#161C40; font-weight: bold}
+td a{color:#161C40; font-weight: bold}}
+th{border-top: 0px; border-bottom: 5px solid #021537; background-image:url('billie_holiday.png'); letter-spacing: +3px}
+td{background-color: lightgrey; letter-spacing: +1px}
 
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+tr{border-bottom: 2px solid #222; background-image:url('billie_holiday.png')}
+
+td:hover {background-color: #eeeeee;}
+a {color:#161C40; font-weight: bold}
+td:hover a{color:#161C40;}
+a:hover{color:#036564;}
+.dropdown-backdrop {position: static;}
+a.dropdown-toggle { outline: none}
+.dropdown-menu > li > a:hover {
+    color:#E8DDCB;
+    background:#031634;}
+#footer{
+    position:absolute;
+    left:0;
+    right:0;
+    height:300px;
+    background:#eeeeee; border-top: 1px solid lightgrey; padding-top: 80px; padding-bottom: 100px}
+
+.navbar {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navbar {margin:0; padding:0; overflow:hidden; width:100%;}
+li      {width:100%}
+li a    {padding: 6px 0; float:left; width:16%; text-align:center;}
+#nav { white-space: nowrap; }
+.nav ul {display: inline-block}
+
+.body {width:1500px;}
+
+</style>
 
 </head>
 
 <body>
-<div class="navbar navbar-fixed-top">
-<div class="navbar-inner">
-  <div class="container">
-    <ul class = "nav">
+  <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </a>
         <a class="brand" href="/"><strong>Tay Group</strong></a>
-      <li class="divider-vertical"></li>
-      <li><a href="/research" id="nav1"><strong>Reserach</strong></a></li>
-      <li><a href="/news" id="nav2"><strong>News</strong></a></li>
-      <li><a href="/publications" id="nav3"><strong>Publications</strong></a></li>
-      <li><a href="/people" id="nav4"><strong>People</strong></a></li>
-      <li><a href="/opportunities" id="nav5"><strong>Opportunities</strong></a></li>
-      <li><a href="/contact" id="nav6"><strong>Contact</a></li>
-    </ul>
+        <div class="nav-collapse">
+              <ul class="nav">
+                <li class="divider-vertical"></li>
+                <li class="dropdown">
+                    <a href="/research" class="dropdown-toggle" data-toggle="dropdown"><strong>Research</strong><b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="/research"><strong>Reserach Overview</strong></a></li>
+                      <li><a href="/technology"><strong>Technologies and Capabilities</strong></a></li>
+                      <li><a href="/model"><strong>NF-&#954B Single-Cell Data and Model</strong></a></li>
+                    </ul>
+                </li>
+                <li><a href="/news"><strong>News</strong></a></li>
+                <li><a href="/publications"><strong>Publications</strong></a></li>
+                <li><a href="/people"><strong>People</strong></a></li>
+                <li><a href="/opportunities"><strong>Opportunities</strong></a></li>
+                <li><a href="/contact"><strong>Contact</strong></a></li>
+                  <ul class="nav pull-right">
+                    <li class="divider-vertical"></li>
+                      <a class="brand" href="http://www.ethz.ch/index_EN"><img src="/home/eth_logo_nav.jpg" style="max-height:20px"></a>
+                  </ul>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "row-fluid hidden-phone" style="background-image:url('billie_holiday.png')">
+        <div class="span12"></div>
+    </div>
+
+    <div class="container">
+      <div class="row-fluid">
+        <div style="text-align: center; background: #031634">
+            <h1 style="color: #E8DDCB; font-size: 50px; font-weight: bold; letter-spacing: +5px; line-height: 1.5; text-align:center;">Tay Group</h1>
+            <h3 style="color:#E8DDCB; text-align:center; letter-spacing: +2px; padding-bottom: 5px">Systems Biology and Bioengineering</h3>
+      </div>
+    </div>
+
+    <div class = "row-fluid hidden-phone" style="background-image:url('billie_holiday.png')">
+        <div class="span12"></div>
+    </div>
+
+    <div id="myCarousel" class="carousel slide">
+
+      <!-- Carousel items -->
+      <div class="carousel-inner" style="height:400px">
+
+        <div class="item active">
+          <%= image_tag '/home/group.jpg', :alt => 'group', :style => 'max-width: 100%'%>
+          <div class="carousel-caption">
+            <h2><a href="people" style="color:white">Tay Group Photo in July 2013</a></h2>
+          </div>
+        </div>
+
+      <div class="item">
+          <%= image_tag '/home/button_chip.jpg', :alt => 'button', :style => 'max-width: 100%'%>
+          <div class="carousel-caption">
+            <h2><a href="research" style="color:white">Single Cell Microfluidics</a></h2>
+          <p style="color:white"></p>
+        </div>
+      </div>
+
+        <div class="item">
+            <%= image_tag '/home/tino_chip_1.jpg', :alt => 'tino_chip_1', :style => 'max-width: 100%'%>
+            <div class="carousel-caption" style:"width:100%">
+              <h2><a href="research" style="color:white">Microfluidic Gradients</a></h2>
+              <p style="color:white">We developed a new microfluidic chip that creates and maintains stable, diffusion based spatial gradients of signaling molecules such as morphogens or chemokines. We are using this technology to investigate spatial patterning of 2D and 3D tissue and cells. This system is especially suited for studies of cell migration and development. <%= link_to '[PDF]', '/publications/2013_loc_frank.pdf', {:style => 'color: white; font-weight: bold'} -%></p>
+            </div>
+          </div>
+
+          <div class="item">
+            <%= image_tag '/home/trapped_macrophage.jpg', :alt => 'trapped_macrophage', :style => 'max-width: 100%'%>
+              <div class="carousel-caption">
+                <h2><a href="research" style="color:white">Single Cell Trap</a></h2>
+              <p style="color:white">A single cell captured in a cell trap.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <%= image_tag '/home/gradient_cells_1.jpg', :alt => 'gradient', :style => 'max-width: 100%'%>
+              <div class="carousel-caption">
+                <h2><a href="research" style="color:white">3T3 Cells in a TNF-&#945 Gradient</a></h2>
+            </div>
+          </div>
+
+      </div>
+
+
+      <!-- Carousel nav -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="icon-prev"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="icon-next"></span>
+    </a> 
+    </div><!-- /.carousel -->
+
+  <div class="container" style="background: #eeeeee">
+    <div class="row-fluid">
+      <div style="text-align: center; background: #eeeeee">
+        <a class="span2 offset2" href="http://www.bsse.ethz.ch/"><img src="/home/D-BSSE_logo.jpg"></a>
+        <a class="span2 offset2" href="http://www.ethz.ch/index_EN"><br><br><br><img src="/home/eth_logo.jpg"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class ="row-fluid">
+  <table class = "table">
+    <thead>
+      <tr>
+      <div class="container">
+        <div class="row-fluid" class="span12">
+            <div style="text-align: center; background: #031634">
+              <h3 style="color:#E8DDCB; text-align:center; letter-spacing: +2px">Recent News</h3>
+          </div>
+        </div>
+      </div>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+          <td><br><%= link_to 'Turkish Radio and Television News', 'http://www.trthaber.com/haber/bilim-teknik/turk-bilim-insanina-buyuk-odul-94665.html' -%> covered Savas Tay's prestigious <%= link_to 'ERC Starting Grant', 'http://erc.europa.eu/starting-grants' -%> award. (July 2013)</div><br><br></td>
+        </tr>
+      <tr>
+          <td>
+
+            <div class="span2 hidden-phone">
+              <%= image_tag '/news/erc.jpg', :alt => 'erc logo', :class => "img-polaroid hidden-phone" %> 
+            </div>
+
+            <div class="span10 hidden-phone"><br class="hidden-phone"><br class="hidden-phone">Savas Tay was awarded the prestigious <%= link_to 'ERC Starting Grant', 'http://erc.europa.eu/starting-grants' -%> with the proposal titled "SingleCellDynamics: Optofluidic toolkit for systems immunology" (June 2013)<br class="hidden-phone"><br class="hidden-phone"></div>
+
+        </td>
+      </tr>
+      <tr>
+          <td>
+
+            <div class="span2">
+              <%= image_tag '/publications/loc_cover_tino.jpg', :alt => 'tino loc cover'%> 
+            </div>
+
+            <div class="span10"><br><br><br><br><br><%= link_to 'Tino\'s paper', '/publications/2013_loc_frank.pdf' -%> is published as a feature article in Lab on a Chip (January 2013)<br></div>
+        </td>
+        </td>
+      </tr>
+      <tr>
+          <td><br>ETH Z&uumlrich is <%= link_to 'ranked', 'http://www.timeshighereducation.co.uk/world-university-rankings/2012-13/world-ranking/range/001-200' -%> 12th overall, and 8th in engineering, with a steady upward movement in the last decade.<br><br></td>
+      </tr>
+
+      <tr>
+          <td><p><a href="news" class="btn offset3 span6" style="text-align:center">More News</a></p><br class="hidden-phone"></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+    <div class = "row-fluid hidden-phone" style="background-image:url('billie_holiday.png')">
+      <div class="span12"></div>
+  </div>
+
+  <div id = "footer" class="hidden-sm">
+    <div class = "container">
+      <div class = "row-fluid">
+        <a class="span2" href="http://www.bsse.ethz.ch/"><img src="/home/D-BSSE_logo.jpg"></a>
+          <p class="span3 offset3"><br><br><br>The Tay Group 2013</p>
+          <a class="span2 offset2" href="http://www.ethz.ch/index_EN"><br><br><br><img src="/home/eth_logo.jpg"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer visible-sm" style="text-align: center">
+      <p>The Tay Group 2013</p>
   </div>
 </div>
-</div>
 
-<div class="container-fluid">
-</div>
-</div>
+<!-- Javascript -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
-<div class="container-fluid">
-	<div class = "row-fluid">
-	  <div class="span12"></div>
-	</div>
-	<div class="row-fluid">
-		<div class="span8 offset2">
-			<div class="well-small" style="text-align: center; background: black">
-				<h1 style="color: #CCC; font-size: 50px; font-weight: bold; letter-spacing: +5px; line-height: 1.5; text-align:center; ">Tay Group</h1>
-				<h3 style="color:#CCC; text-align:center; letter-spacing: +2px">Systems Biology and Bioengineering</h>
-			</div>
-		</div>
-		<div class="row-fluid">
-			<div class="span8 offset2" style="text-align: center">
-					<img id="img_1" src="http://placehold.it/900x700/ffffff/OOOOOO" class = "img-rounded" style = "height: auto; width: 100%; overflow:hidden; padding: 0px">
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="footer">
-  <p style="color: #CCC">The Tay Group 2012</p>
-</div>
+<script type="text/javascript" >
+            $(document).ready(function() {        
+        $('.carousel').carousel()
+            });
+</script> 
 
 <script>
-$(document).ready(function () {
+  $(".collapse").collapse()
+</script>
 
-	$('#nav1').hover(
-	  function () {
-	  	$('#img_1').attr({src: "tay_website_v1_midL_web.jpg"});
-	  },
-	);
-	
-});
+<script>
+  $('.navbar .dropdown').hover(function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+  }, function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
+  });
 </script>
 
 </body>
-</html>
