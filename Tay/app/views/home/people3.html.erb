@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <link href="/assets/styleshets/application.scss" rel="stylesheet" type="text/css">
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0css/bootstrap.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
 <style type="text/css">
 h1{color: #222; font-size: 50px; font-weight: bold; letter-spacing: +5px; text-align:center}
 p{color: #222}
@@ -27,6 +27,9 @@ a.dropdown-toggle { outline: none}
 .dropdown-menu > li > a:hover {
     color:#E8DDCB;
     background:#031634;}
+
+.container {max-width:910px;}
+
 #footer{
     position:absolute;
     left:0;
@@ -34,19 +37,64 @@ a.dropdown-toggle { outline: none}
     height:300px;
     background:#eeeeee; border-top: 1px solid lightgrey; padding-top: 80px; padding-bottom: 100px}
 
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.carousel-caption {
+  right: 0;
+  bottom: 20px;
+  left: 0;
+  padding: 0px;
+  background: #333333;
+  background: rgba(0, 0, 0, 0.75);
+}
+.carousel-control {
+  position: absolute;
+  top: 40%;
+  width: 40px;
+  height: 40px;
+  padding:10px;
+  line-height:2000%
+}
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  font-family: serif;
+}
+
+.carousel-control .icon-prev:before {
+  content: '\2039';
+}
+
+.carousel-control .icon-next:before {
+  content: '\203a';
+}
+
 .navbar {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
 }
-
-/*#navbar {margin:0; padding:0; overflow:hidden; width:100%;}
-li      {width:100%}
-li a    {padding: 6px 0; float:left; width:16%; text-align:center;}*/
-/*#nav { white-space: nowrap; }
-.nav ul {display: inline-block}*/
-
-.body {width:1500px;}
 
 </style>
 
@@ -66,7 +114,7 @@ li a    {padding: 6px 0; float:left; width:16%; text-align:center;}*/
               <ul class="nav">
                 <li class="divider-vertical"></li>
                 <li class="dropdown">
-                    <a href="/research" class="dropdown-toggle" data-toggle="dropdown"><strong>Research</strong><b class="caret"></b></a>
+                    <a href="/research" class="dropdown-toggle" style="background-color: #fafafa;background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);background-repeat: repeat-x;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);*zoom: 1;" data-toggle="dropdown"><strong>Research</strong><b class="caret"></b></a>
                     <ul class="dropdown-menu">
                       <li><a href="/research"><strong>Reserach Overview</strong></a></li>
                       <li><a href="/technology"><strong>Technologies and Capabilities</strong></a></li>
@@ -78,10 +126,6 @@ li a    {padding: 6px 0; float:left; width:16%; text-align:center;}*/
                 <li><a href="/people"><strong>People</strong></a></li>
                 <li><a href="/opportunities"><strong>Opportunities</strong></a></li>
                 <li><a href="/contact"><strong>Contact</strong></a></li>
-                  <ul class="nav pull-right">
-                    <li class="divider-vertical"></li>
-                      <a class="brand" href="http://www.ethz.ch/index_EN"><img src="/home/eth_logo_nav.jpg" style="max-height:20px"></a>
-                  </ul>
               </ul>
           </div>
         </div>
@@ -107,19 +151,19 @@ li a    {padding: 6px 0; float:left; width:16%; text-align:center;}*/
     <div id="myCarousel" class="carousel slide">
 
       <!-- Carousel items -->
-      <div class="carousel-inner" style="height:400px">
+      <div class="carousel-inner">
 
         <div class="item active">
           <%= image_tag '/home/group.jpg', :alt => 'group', :style => 'max-width: 100%'%>
           <div class="carousel-caption">
-            <h2><a href="people" style="color:white">Tay Group Photo in July 2013</a></h2>
+            <h2><a href="people" style="color:white">Tay Group Photo in July 2013<br></a></h2>
           </div>
         </div>
 
       <div class="item">
           <%= image_tag '/home/button_chip.jpg', :alt => 'button', :style => 'max-width: 100%'%>
           <div class="carousel-caption">
-            <h2><a href="research" style="color:white">Single Cell Microfluidics</a></h2>
+            <h2><a href="research" style="color:white">Single Cell Microfluidics<br></a></h2>
           <p style="color:white"></p>
         </div>
       </div>
@@ -128,7 +172,7 @@ li a    {padding: 6px 0; float:left; width:16%; text-align:center;}*/
             <%= image_tag '/home/tino_chip_1.jpg', :alt => 'tino_chip_1', :style => 'max-width: 100%'%>
             <div class="carousel-caption" style:"width:100%">
               <h2><a href="research" style="color:white">Microfluidic Gradients</a></h2>
-              <p style="color:white">We developed a new microfluidic chip that creates and maintains stable, diffusion based spatial gradients of signaling molecules such as morphogens or chemokines. We are using this technology to investigate spatial patterning of 2D and 3D tissue and cells. This system is especially suited for studies of cell migration and development. <%= link_to '[PDF]', '/publications/2013_loc_frank.pdf', {:style => 'color: white; font-weight: bold'} -%></p>
+              <p style="color:white">We developed a new microfluidic chip that creates and maintains stable, diffusion based spatial gradients of signaling molecules such as morphogens or chemokines. We are using this technology to investigate spatial patterning of 2D and 3D tissue and cells. This system is especially suited for studies of cell migration and development. <%= link_to '[PDF]', '/publications/2013_loc_frank.pdf', {:style => 'color: white; font-weight: bold'} -%><br><br></p>
             </div>
           </div>
 
@@ -136,7 +180,7 @@ li a    {padding: 6px 0; float:left; width:16%; text-align:center;}*/
             <%= image_tag '/home/trapped_macrophage.jpg', :alt => 'trapped_macrophage', :style => 'max-width: 100%'%>
               <div class="carousel-caption">
                 <h2><a href="research" style="color:white">Single Cell Trap</a></h2>
-              <p style="color:white">A single cell captured in a cell trap.</p>
+              <p style="color:white">A single cell captured in a cell trap.<br><br></p>
             </div>
           </div>
 
@@ -151,21 +195,19 @@ li a    {padding: 6px 0; float:left; width:16%; text-align:center;}*/
 
 
       <!-- Carousel nav -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="icon-prev"></span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="icon-next"></span>
-    </a> 
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="icon-next"></span>
+  </a>
     </div><!-- /.carousel -->
 
-  <div class="container" style="background: #eeeeee">
-    <div class="row-fluid">
-      <div style="text-align: center; background: #eeeeee">
-        <a class="span2 offset2" href="http://www.bsse.ethz.ch/"><img src="/home/D-BSSE_logo.jpg"></a>
-        <a class="span2 offset2" href="http://www.ethz.ch/index_EN"><br><br><br><img src="/home/eth_logo.jpg"></a>
+  <div class="container" style="background: #eeeeee; padding-top: 20px; border: 1px solid lightgrey;">
+      <div class="row-fluid">
+          <a class="span2 offset2" href="http://www.bsse.ethz.ch/"><img src="/home/D-BSSE_logo.jpg"></a>
+          <a class="span2 offset4" href="http://www.ethz.ch/index_EN"><br><br><br><img src="/home/eth_logo.jpg"></a>
       </div>
-    </div>
   </div>
 
   <div class ="row-fluid">
