@@ -56,6 +56,36 @@ a.dropdown-toggle { outline: none}
   width: 40px;
   height: 40px;
   padding:10px;
+  line-height:2000%
+}
+
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  font-family: serif;
+}
+
+.carousel-control .icon-prev:before {
+  content: '\2039';
+}
+
+.carousel-control .icon-next:before {
+  content: '\203a';
 }
 
 .navbar {
@@ -163,15 +193,15 @@ a.dropdown-toggle { outline: none}
 
 
       <!-- Carousel nav -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="icon-prev"></span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="icon-next"></span>
-    </a> 
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="icon-next"></span>
+  </a>
     </div><!-- /.carousel -->
 
-  <div class="container" style="background: #eeeeee; padding-top: 20px">
+  <div class="container" style="background: #eeeeee; padding-top: 20px; border: 1px solid lightgrey;">
       <div class="row-fluid">
           <a class="span2 offset2" href="http://www.bsse.ethz.ch/"><img src="/home/D-BSSE_logo.jpg"></a>
           <a class="span2 offset4" href="http://www.ethz.ch/index_EN"><br><br><br><img src="/home/eth_logo.jpg"></a>
