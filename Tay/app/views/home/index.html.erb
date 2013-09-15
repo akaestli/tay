@@ -2,9 +2,10 @@
 <!-- Made by Alicia J. Kaestli, last updated on 2013/7/26 !-->
 <html lang="en">
 <head>
-<link href="/assets/stylesheets/application.scss" rel="stylesheet" type="text/css">
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
+<link href="/assets/stylesheets/application.css" rel="stylesheet" type="text/css">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 <style type="text/css">
+
 h1{color: #222; font-size: 50px; font-weight: bold; letter-spacing: +5px; text-align:center}
 p{color: #222}
 h3{color: #222; font-weight: bold}
@@ -28,7 +29,7 @@ a.dropdown-toggle { outline: none}
     color:#E8DDCB;
     background:#031634;}
 
-.container {max-width:910px;}
+.container {max-width:940px;}
 
 #footer{
     position:absolute;
@@ -132,12 +133,12 @@ a.dropdown-toggle { outline: none}
       </div>
     </div>
 
-    <div class = "row-fluid hidden-phone" style="background-image:url('billie_holiday.png')">
+    <div class = "row" style="background-image:url('billie_holiday.png'); width:100%">
         <div class="span12"></div>
     </div>
 
     <div class="container">
-      <div class="row-fluid">
+      <div class="row" style="width:100%">
         <div style="text-align: center; background: #031634">
             <h1 style="color: #E8DDCB; font-size: 50px; font-weight: bold; letter-spacing: +5px; line-height: 1.5; text-align:center;">Tay Group</h1>
             <h3 style="color:#E8DDCB; text-align:center; letter-spacing: +2px; padding-bottom: 5px">Systems Biology and Bioengineering</h3>
@@ -154,14 +155,14 @@ a.dropdown-toggle { outline: none}
       <div class="carousel-inner">
 
         <div class="item active">
-          <%= image_tag '/home/group.jpg', :alt => 'group', :style => 'max-width: 100%'%>
+          <img alt="group" src="/home/group.jpg" style="max-width: 100%" />
           <div class="carousel-caption">
             <h2><a href="people" style="color:white">Tay Group Photo in July 2013<br></a></h2>
           </div>
         </div>
 
       <div class="item">
-          <%= image_tag '/home/button_chip.jpg', :alt => 'button', :style => 'max-width: 100%'%>
+          <img alt="button" src="/home/button_chip.jpg" style="max-width: 100%" />
           <div class="carousel-caption">
             <h2><a href="research" style="color:white">Single Cell Microfluidics<br></a></h2>
           <p style="color:white"></p>
@@ -169,15 +170,15 @@ a.dropdown-toggle { outline: none}
       </div>
 
         <div class="item">
-            <%= image_tag '/home/tino_chip_1.jpg', :alt => 'tino_chip_1', :style => 'max-width: 100%'%>
+            <img alt="tino_chip_1" src="/home/tino_chip_1.jpg" style="max-width: 100%" />
             <div class="carousel-caption" style:"width:100%">
               <h2><a href="research" style="color:white">Microfluidic Gradients</a></h2>
-              <p style="color:white">We developed a new microfluidic chip that creates and maintains stable, diffusion based spatial gradients of signaling molecules such as morphogens or chemokines. We are using this technology to investigate spatial patterning of 2D and 3D tissue and cells. This system is especially suited for studies of cell migration and development. <%= link_to '[PDF]', '/publications/2013_loc_frank.pdf', {:style => 'color: white; font-weight: bold'} -%><br><br></p>
+              <p style="color:white">We developed a new microfluidic chip that creates and maintains stable, diffusion based spatial gradients of signaling molecules such as morphogens or chemokines. We are using this technology to investigate spatial patterning of 2D and 3D tissue and cells. This system is especially suited for studies of cell migration and development. <a href="/publications/2013_loc_frank.pdf" style="color: white; font-weight: bold">[PDF]</a><br><br></p>
             </div>
           </div>
 
           <div class="item">
-            <%= image_tag '/home/trapped_macrophage.jpg', :alt => 'trapped_macrophage', :style => 'max-width: 100%'%>
+            <img alt="trapped_macrophage" src="/home/trapped_macrophage.jpg" style="max-width: 100%" />
               <div class="carousel-caption">
                 <h2><a href="research" style="color:white">Single Cell Trap</a></h2>
               <p style="color:white">A single cell captured in a cell trap.<br><br></p>
@@ -185,7 +186,7 @@ a.dropdown-toggle { outline: none}
           </div>
 
           <div class="item">
-            <%= image_tag '/home/gradient_cells_1.jpg', :alt => 'gradient', :style => 'max-width: 100%'%>
+            <img alt="gradient" src="/home/gradient_cells_1.jpg" style="max-width: 100%" />
               <div class="carousel-caption">
                 <h2><a href="research" style="color:white">3T3 Cells in a TNF-&#945 Gradient</a></h2>
             </div>
@@ -210,12 +211,12 @@ a.dropdown-toggle { outline: none}
       </div>
   </div>
 
-  <div class ="row-fluid">
+  <div class ="row" style="width:100%">
   <table class = "table">
     <thead>
       <tr>
       <div class="container">
-        <div class="row-fluid" class="span12">
+        <div class="row" style="width:100%">
             <div style="text-align: center; background: #031634">
               <h3 style="color:#E8DDCB; text-align:center; letter-spacing: +2px">Recent News</h3>
           </div>
@@ -226,20 +227,20 @@ a.dropdown-toggle { outline: none}
     <tbody>
 
       <tr>
-        <td><br><%= link_to 'ETH Life', 'http://www.ethlife.ethz.ch/archive_articles/130819_erc_starting_grants_red/index_EN' -%> covered Savas Tay's <%= link_to 'ERC Starting Grant', 'http://erc.europa.eu/starting-grants' -%> award. (August 2013)<br><br></td>
+        <td><br><a href="http://www.ethlife.ethz.ch/archive_articles/130819_erc_starting_grants_red/index_EN">ETH Life</a> covered Savas Tay's <a href="http://erc.europa.eu/starting-grants">ERC Starting Grant</a> award. (August 2013)<br><br></td>
       </tr>
 
       <tr>
-          <td><br><%= link_to 'Turkish Radio and Television News', 'http://www.trthaber.com/haber/bilim-teknik/turk-bilim-insanina-buyuk-odul-94665.html' -%> covered Savas Tay's <%= link_to 'ERC Starting Grant', 'http://erc.europa.eu/starting-grants' -%> award. (July 2013)</div><br><br></td>
+          <td><br><a href="http://www.trthaber.com/haber/bilim-teknik/turk-bilim-insanina-buyuk-odul-94665.html">Turkish Radio and Television News</a> covered Savas Tay's <a href="http://erc.europa.eu/starting-grants">ERC Starting Grant</a> award. (July 2013)</div><br><br></td>
         </tr>
       <tr>
           <td>
 
-            <div class="span2 hidden-phone">
-              <%= image_tag '/news/erc.jpg', :alt => 'erc logo', :class => "img-polaroid hidden-phone" %> 
+            <div class="span2">
+              <img alt="erc logo" class="img-polaroid hidden-phone" src="/news/erc.jpg" /> 
             </div>
 
-            <div class="span10 hidden-phone"><br class="hidden-phone"><br class="hidden-phone">Savas Tay was awarded the prestigious <%= link_to 'ERC Starting Grant', 'http://erc.europa.eu/starting-grants' -%> with the proposal titled "SingleCellDynamics: Optofluidic toolkit for systems immunology" (June 2013)<br class="hidden-phone"><br class="hidden-phone"></div>
+            <div class="span10"><br><br>Savas Tay was awarded the prestigious <a href="http://erc.europa.eu/starting-grants">ERC Starting Grant</a> with the proposal titled "SingleCellDynamics: Optofluidic toolkit for systems immunology" (June 2013)<br><br></div>
 
         </td>
       </tr>
@@ -247,15 +248,15 @@ a.dropdown-toggle { outline: none}
           <td>
 
             <div class="span2">
-              <%= image_tag '/publications/loc_cover_tino.jpg', :alt => 'tino loc cover'%> 
+              <img alt="tino loc cover" src="/publications/loc_cover_tino.jpg" /> 
             </div>
 
-            <div class="span10"><br><br><br><br><br><%= link_to 'Tino\'s paper', '/publications/2013_loc_frank.pdf' -%> is published as a feature article in Lab on a Chip (January 2013)<br></div>
+            <div class="span10"><br><br><br><br><br><a href="/publications/2013_loc_frank.pdf">Tino&#x27;s paper</a> is published as a feature article in Lab on a Chip (January 2013)<br></div>
         </td>
         </td>
       </tr>
       <tr>
-          <td><br>ETH Z&uumlrich is <%= link_to 'ranked', 'http://www.timeshighereducation.co.uk/world-university-rankings/2012-13/world-ranking/range/001-200' -%> 12th overall, and 8th in engineering, with a steady upward movement in the last decade.<br><br></td>
+          <td><br>ETH Z&uumlrich is <a href="http://www.timeshighereducation.co.uk/world-university-rankings/2012-13/world-ranking/range/001-200">ranked</a> 12th overall, and 8th in engineering, with a steady upward movement in the last decade.<br><br></td>
       </tr>
 
       <tr>
@@ -265,7 +266,7 @@ a.dropdown-toggle { outline: none}
   </table>
   </div>
 
-    <div class = "row-fluid hidden-phone" style="background-image:url('billie_holiday.png')">
+    <div class = "row-fluid" style="background-image:url('billie_holiday.png')">
       <div class="span12"></div>
   </div>
 
@@ -306,8 +307,9 @@ $('.carousel').carousel({
   });
 </script>
 
-<<<<<<< HEAD
 </body>
-=======
+</div>
+
 </body>
->>>>>>> 94fd22f43036979e7880b6abbf2e061732e3a24a
+
+</html>
