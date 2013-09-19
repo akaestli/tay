@@ -1,250 +1,290 @@
-<!DOCTYPE html>
-<!-- Made by Alicia J. Kaestli, last updated on 2013/7/26 !-->
-<html lang="en">
+<html>
 <head>
-<link href="app/assets/styleshets/application.scss" rel="stylesheet" type="text/css">
-<!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet"> -->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+
 <style type="text/css">
-  h1{color: #CCC; font-size: 50px; font-weight: bold; letter-spacing: +5px}
-  h4{color: #CCC; font-size: 15px; font-weight: bold; letter-spacing: +5px}
-  body{font-size: 13px; line-height: 18px; letter-spacing: +2px}
-  .carousel {margin: -1px 0 0 -1px;}
-  thead {color:#222; font-size: 30px}
-  tbody {color: #222;}
-  th{border-top: 0px; border-bottom: 5px solid #161C40; background-image:url('billie_holiday.png'); letter-spacing: +3px}
-  td{background-color: lightgrey; letter-spacing: +1px}
-  tr{border-bottom: 2px solid #222; background-image:url('billie_holiday.png')}
-  td:hover {background-color: #eeeeee;}
-  a {color: white; font-weight: bold}
-  td a{color:#161C40; font-weight: bold}}
-  a.dropdown-toggle {outline: none}
-  .dropdown-backdrop {position: static;}
-  .dropdown-menu > li > a:hover {
-      color:#E8DDCB;
-      background:#031634;}
-  #footer{
+thead {color:#222; font-size: 30px}
+tbody {color: #222;}
+
+h1{color: #222; font-size: 50px; font-weight: bold; letter-spacing: +5px; text-align:center;}
+h4{color: #222; font-size: 15px; font-weight: bold; letter-spacing: +5px; text-align:center;}
+h3{color: black; font-size: 20px; font-weight: bold; letter-spacing: +5px; text-align:center;}
+
+th{border-top: 0px; border-bottom: 5px solid #021537; background-image:url('billie_holiday.png'); letter-spacing: +3px}
+td{background-color: lightgrey; letter-spacing: +1px}
+
+tr{border-bottom: 2px solid #222; background-image:url('billie_holiday.png')}
+
+td:hover {background-color: #eeeeee;}
+a {color:#161C40; font-weight: bold}
+td:hover a{color:#161C40;}
+a.dropdown-toggle { outline: none}
+.dropdown-backdrop {position: static;}
+.dropdown-menu > li > a:hover {
+    color:#E8DDCB;
+    background:#021537;}
+#footer{
     position:absolute;
     left:0;
     right:0;
     height:300px;
     background:#eeeeee; border-top: 1px solid lightgrey; padding-top: 80px; padding-bottom: 100px}
+
+body{padding-top: 70px}
 </style>
-
-<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
-
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-          <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-          <a class="brand" href="/"><strong>Tay Group</strong></a>
-          <div class="nav-collapse">
-                <ul class="nav">
-                  <li class="divider-vertical"></li>
-                  <li class="dropdown">
-                      <a href="/research" class="dropdown-toggle" style="background-color: #fafafa;background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);background-repeat: repeat-x;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);*zoom: 1;" data-toggle="dropdown"><strong>Research</strong><b class="caret"></b></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="/research"><strong>Reserach Overview</strong></a></li>
-                        <li><a href="/technology"><strong>Technologies</strong></a></li>
-                        <li><a href="/model"><strong>NF-&#954B Single-Cell Data and Model</strong></a></li>
-                      </ul>
-                  </li>
-                  <li><a href="/news"><strong>News</strong></a></li>
-                  <li><a href="/publications"><strong>Publications</strong></a></li>
-                  <li><a href="/people"><strong>People</strong></a></li>
-                  <li><a href="/opportunities"><strong>Opportunities</strong></a></li>
-                  <li><a href="/contact"><strong>Contact</strong></a></li>
-                  <ul class="nav pull-right">
-                  <li class="divider-vertical"></li>
-                    <a class="brand" href="http://www.ethz.ch/index_EN"><img src="/home/eth_logo_nav.jpg" style="max-height:20px"></a>
-                  </ul>
-                </ul>
-            </div>
+  <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </a>
+        <a class="brand" href="/"><strong>Tay Group</strong></a>
+        <div class="nav-collapse">
+              <ul class="nav">
+                <li class="divider-vertical"></li>
+                <li class="dropdown">
+                    <a href="/research" class="dropdown-toggle" style="background-color: #fafafa;background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);background-repeat: repeat-x;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);*zoom: 1;" data-toggle="dropdown"><strong>Research</strong><b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="/research"><strong>Reserach Overview</strong></a></li>
+                      <li><a href="/technology"><strong>Technologies and Capabilities</strong></a></li>
+                      <li><a href="/model"><strong>NF-&#954B Single-Cell Data and Model</strong></a></li>
+                    </ul>
+                </li>
+                <li><a href="/news"><strong>News</strong></a></li>
+                <li class="active"><a href="/publications"><strong>Publications</strong></a></li>
+                <li><a href="/people"><strong>People</strong></a></li>
+                <li><a href="/opportunities"><strong>Opportunities</strong></a></li>
+                <li><a href="/contact"><strong>Contact</strong></a></li>
+             </ul>
           </div>
         </div>
       </div>
-
-    <div class = "row-fluid hidden-phone" style="background-image:url('billie_holiday.png')">
-        <div class="span12"></div>
     </div>
-
-    <div class="container">
-      <div class="row-fluid" class="span12">
-          <div style="text-align: center; background: #031634">
-            <h1 style="color: #E8DDCB; font-size: 50px; font-weight: bold; letter-spacing: +5px; line-height: 1.5; text-align:center;" class="hidden-phone">Tay Group</h1>
-            <h3 style="color:#E8DDCB; text-align:center; letter-spacing: +2px" class="hidden-phone">Systems Biology and Bioengineering</h3>
-            <h4 style="color:#E8DDCB; text-align:center; letter-spacing: +2px" class="visible-phone">Tay Group on Systems Biology and Bioengineering</h4>
-      </div>
-    </div>
-
-    <div class = "row-fluid, hidden-phone" style="background-image:url('billie_holiday.png')">
-        <div class="span12 hidden-phone"></div>
-    </div>
-
-    <div id="myCarousel" class="carousel slide container, hidden-phone">
-
-      <!-- Carousel items -->
-      <div class="carousel-inner">
-
-        <div class="active item">
-          <%= image_tag '/home/group.jpg', :alt => 'group', :style => 'max-width: 100%'%>
-          <div class="carousel-caption">
-            <h2><a href="people" style="color:white">Tay Group Photo in July 2013</a></h2>
-        </div>
-        </div>
-
-      <div class="item">
-          <%= image_tag '/home/button_chip.jpg', :alt => 'button', :style => 'max-width: 100%'%>
-          <div class="carousel-caption">
-            <h2><a href="research" style="color:white">Single Cell Microfluidics</a></h2>
-          <p style="color:white"></p>
-        </div>
-      </div>
-
-        <div class="item">
-        <%= image_tag '/home/tino_chip_1.jpg', :alt => 'gradient', :style => 'max-width: 100%'%>
-        <div class="carousel-caption">
-          <h2><a href="research" style="color:white">Microfluidic Gradients</a></h2>
-        <p style="color:white">We developed a new microfluidic chip that creates and maintains stable, diffusion based spatial gradients of signaling molecules such as morphogens or chemokines. We are using this technology to investigate spatial patterning of 2D and 3D tissue and cells. This system is especially suited for studies of cell migration and development. <%= link_to '[PDF]', '/publications/2013_loc_frank.pdf', {:style => 'color: white; font-weight: bold'} -%></p>
-      </div>
-          </div>
-
-          <div class="item">
-        <%= image_tag '/home/trapped_macrophage.jpg', :alt => 'gradient', :style => 'max-width: 100%'%>
-          <div class="carousel-caption">
-            <h2><a href="research" style="color:white">Single Cell Trap</a></h2>
-          <p style="color:white">A single cell captured in a cell trap.</p>
-        </div>
-          </div>
-
-          <div class="item">
-        <%= image_tag '/home/gradient_cells_1.jpg', :alt => 'gradient', :style => 'max-width: 100%'%>
-          <div class="carousel-caption">
-            <h2><a href="research" style="color:white">3T3 Cells in a TNF-&#945 Gradient</a></h2>
-        </div>
-          </div>
-
-      </div>
-
-
-      <!-- Carousel nav -->
-      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-      </div>
-    </div>
-
-  <div class = "row-fluid, visible-phone" style="background-image:url('billie_holiday.png')">
-      <div class="span12, visible-phone"></div>
-  </div>
-
-  <div class="row-fluid" class="visible-phone">
-    <div class="span12, visible-phone">
-      <%= image_tag '/home/button_chip.jpg', :alt => 'cover_2', :class => 'visible-phone'%> 
-    </div>
-  </div>
-
-  <div class = "row-fluid, visible-phone" style="background-image:url('billie_holiday.png')">
+<div class = "row-fluid hidden-phone" style="background-image:url('billie_holiday.png')">
     <div class="span12"></div>
+</div>
+
+<div class="row-fluid">
+  <div class="well-small" style="text-align: center; background-color: #021537">
+    <h1 class="hidden-phone" style="color: #E8DDCB">Publications</h1>
   </div>
+</div>
 
-  <div class = "row-fluid hidden-phone" style="background-image:url('billie_holiday.png')">
-      <div class="span12"></div>
-  </div>
+<div class="container-fluid" style="border: 0px; border-color: blue; background-image:url('billie_holiday.png')">
+    <div class="span12"></div>
+</div>
 
-  <div class ="row-fluid">
-  <table class = "table">
-    <thead>
-      <tr>
-      <div class="container">
-        <div class="row-fluid" class="span12">
-            <div style="text-align: center; background: #031634">
-              <h3 style="color:#E8DDCB; text-align:center; letter-spacing: +2px" class="hidden-phone">Recent News</h3>
-              <h4 style="color:#E8DDCB; text-align:center; letter-spacing: +2px" class="visible-phone">Recent News</h4>
-          </div>
-        </div>
-  </div>
-      </tr>
-    </thead>
-    <tbody>
+<div class ="row-fluid">
+<table class = "table table-hover">
+<thead>
+  <tr>
+    <th><br>2013<br><br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+      <td class="span1"><br><h3>22</h3><br><br></td>
+      <td><br>Pekalski J, Zuk PJ, Junkin M, Kellogg R, Tay S, Lipniacki T. "Stochastic NF-kappaB activation via autocrine TNFalpha signaling." Accepted, <strong>PLOS One</strong><br><br></td>
+  </tr>
+  <tr>
+      <td class="span1"><br><h3>21</h3><br><br></td>
+      <td><br>Kellogg R, Lipniacki T, Quake SR, Tay S. "Digital time-delayed NF-kappaB dynamics encode endotoxin dose", submitted <br><br></td>
+  </tr>
 
-      <tr>
-          <td><br><%= link_to 'Turkish Radio and Television News', 'http://www.trthaber.com/haber/bilim-teknik/turk-bilim-insanina-buyuk-odul-94665.html' -%> covered Savas Tay's prestigious <%= link_to 'ERC Starting Grant', 'http://erc.europa.eu/starting-grants' -%> award. (July 2013)</div><br><br></td>
-        </tr>
-      <tr>
-          <td>
+  <tr>
+    <td class="span1"><br><h3>20</h3><br><br></td>
+    <td>
 
-            <div class="span2 hidden-phone">
-              <%= image_tag '/news/erc.jpg', :alt => 'erc logo', :class => "img-polaroid hidden-phone" %> 
-            </div>
+      <div class="span2">
+        <%= image_tag '/publications/loc_cover_tino.jpg', :alt => 'tino loc cover', :class => "img-polaroid" %> 
+      </div>
 
-            <div class="span10 hidden-phone"><br class="hidden-phone"><br class="hidden-phone">Savas Tay was awarded the prestigious <%= link_to 'ERC Starting Grant', 'http://erc.europa.eu/starting-grants' -%> with the proposal titled "SingleCellDynamics: Optofluidic toolkit for systems immunology" (June 2013)<br class="hidden-phone"><br class="hidden-phone"></div>
+      <div class="span9" style="#position: absolute; #top: 50%;display: table-cell; vertical-align: middle;"><br>
+        Frank T, Tay S. "Flow-switching allows independently programmable, extremely stable, high-throughput diffusion-based gradients". <strong>Lab on a Chip</strong>, 13, 1273 (2013).
+        <%= link_to '[PDF]', '/publications/2013_loc_frank.pdf' -%> 
+        <%= link_to '(Correction)', '/publications/2013_loc_frank_correction.pdf' -%> 
 
-            <div class="span12 visible-phone">Savas Tay was awarded the prestigious <%= link_to 'ERC Starting Grant', 'http://erc.europa.eu/starting-grants' -%> with the proposal titled "SingleCellDynamics: Optofluidic toolkit for systems immunology" (June 2013)<br class="hidden-phone"><br class="hidden-phone"></div>
-        </td>
-      </tr>
-      <tr>
-          <td>
+        <br><br>
+        <i>(Featured cover article)</i>
+        <br><br>
+        <i> <%= link_to 'HOT', 'http://blogs.rsc.org/lc/2013/05/03/trio-of-hot-articles-reversible-phase-transitions-super-strong-adhesive-and-flow-switching-for-programmable-gradients/' -%>  article at RSC blog </i>
+      </div>
+    </td>
+  </tr>
 
-            <div class="span2 hidden-phone">
-              <%= image_tag '/publications/loc_cover_tino.jpg', :alt => 'tino loc cover', :class => "img-polaroid hidden-phone" %> 
-            </div>
+  <tr>
+      <td class="span1"><br><h3>19</h3><br><br></td>
+      <td><br>S. Vedel,* S. Tay,* D. Johnston, H. Bruus, S. R. Quake. "Migration of cells in social context". <strong>PNAS</strong>, 110, 129 (2013) (*equal contribution) <%= link_to '[PDF]', '/publications/2012_pnas.pdf' -%><br><br></td>
+  </tr>
+</tbody>
 
-            <div class="span10 hidden-phone"><br class="hidden-phone"><br class="hidden-phone"><br class="hidden-phone"><br class="hidden-phone"><br class="hidden-phone"><%= link_to 'Tino\'s paper', '/publications/2013_loc_frank.pdf' -%> is published as a feature article in Lab on a Chip (January 2013)<br class="hidden-phone" class="hidden-phone"><br class="hidden-phone"></div>
+<thead>
+  <tr>
+    <th><br>2010<br><br></th>
+  </tr>
+</thead>
+<tbody>
+    <tr>
+      <td class="span1"><br><h3>18</h3><br><br></td>
+      <td><br>S. Tay,* J. J. Hughey,* T. K. Lee, T. Lipniacki, S. R. Quake, M. W. Covert. “Single-cell NF-kappaB dynamics reveal digital activation and analogue information processing.” <strong>Nature</strong>, 466, 267 (2010) (*equal contribution)
 
-            <div class="span12 visible-phone"><%= link_to 'Tino\'s paper', '/publications/2013_loc_frank.pdf' -%> is published as a feature article in Lab on a Chip (January 2013)</div>
-        </td>
-        </td>
-      </tr>
-      <tr>
-          <td><br>ETH Z&uumlrich is <%= link_to 'ranked', 'http://www.timeshighereducation.co.uk/world-university-rankings/2012-13/world-ranking/range/001-200' -%> 12th overall, and 8th in engineering, with a steady upward movement in the last decade.<br><br></td>
-      </tr>
+        <%= link_to '[PDF]', '/publications/2010_Nature_Tay.pdf' -%>
 
-      <tr>
-          <td><p><a href="news" class="btn offset3 span6" style="text-align:center">More News</a></p><br class="hidden-phone"></td>
-      </tr>
-    </tbody>
-  </table>
-  </div>
+        <br><br><i>Ranked "exceptional" by Faculty of 1000 Biology, and was covered by "The Seven Stones" EMBO, Biotechniques.com, and many others.</i><br><br></td>
+  </tr>
+  <tr>
+      <td class="span1"><br><h3>17</h3><br><br></td>
+      <td><br>C. Christenson, P. Blanche, S. Tay, R. Voorakaranam, T. Gu, P. Wang, M. Yamamoto, R. Norwood, N. Peyghambarian. “Materials for an updateable holographic display”, <strong>IEEE Journal of Display Technology</strong>, 99, 1 (2010)
+        <%= link_to '[PDF]', '/publications/2010_IEEE_Christenson.pdf' -%> <br><br></td>
+  </tr>
+</tbody>
 
-    <div class = "row-fluid hidden-phone" style="background-image:url('billie_holiday.png')">
-      <div class="span12"></div>
-  </div>
+<thead>
+  <tr>
+    <th><br>2009<br><br></th>
+  </tr>
+</thead>
+<tbody>
+    <tr>
+      <td class="span1"><br><h3>16</h3><br><br></td>
+      <td><br>S. Tay, A. Kropachev, I. E. Araci, R. A. Norwood, T. Skotheim, N. Peyghambarian, “Plasmonic thermal IR emitters based on nano-amorphous carbon.” <strong>Applied Physics Letters</strong>, 94, 071113 (2009) <%= link_to '[PDF]', '/publications/2009_apl_tay.pdf'-%><br><br></td>
+  </tr>
+</tbody>
 
-  <div id = "footer" class="hidden-phone">
+<thead>
+  <tr>
+    <th><br>2008<br><br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+      <td class="span1"><br><h3>15</h3><br><br></td>
+      <td><br>S. Tay, P. Blanche, R. Voorakaranam, A. V. Tunc, J. Thomas, S. Rokutanda, R. Flores, P. Wang, G. Li, W. Lin, T. Gu, P. St. Hilaire, R. Norwood, M. Yamamoto, P. Wang and N. Peyghambarian, “An updateable holographic three-dimensional display.” <strong>Nature</strong>, 451, 694 (2008) <%= link_to '[PDF]', '/publications/2008_nature_tay.pdf' -%><br><br><i>This paper was covered by: CNN, Discovery Channel, National Geographic, BBC, NPR (National Public Radio), Photonics Spectra, Chemistry World, Physics World, Photonics Spectra, New Scientist, ABC News, Photonics.com, Daily Telegraph, Nikkei Newspaper, Optics.org, MIT Technology Review, Materials World, Laser Focus World, Die Welt, The Herald, IEEE Spectrum, Science et Vie and many others.</i><br><br></td>
+  </tr>
+  <tr>
+      <td class="span1"><br><h3>14</h3><br><br></td>
+      <td><br>S. Tay, N. Peyghambarian, “Updateable holographic 3D displays based on photorefractive polymers” (invited) <strong>Society for Information Display</strong>, 24, 07, (2008)<br><br></td>
+  </tr>
+  <tr>
+      <td class="span1"><br><h3>13</h3><br><br></td>
+      <td><br> N. Peyghambarian, S. Tay, P. Blanche, R. Norwood, M. Yamamoto, Rewritable holographic 3D displays” (invited) (Cover article). <strong>Optics and Photonics News</strong> (2008) <%= link_to '[PDF]', '/publications/2008_opn_tay.pdf' -%><br><br></td>
+  </tr>
+
+  <tr>
+      <td class="span1"><br><h3>12</h3><br><br></td>
+      <td><br>P. A. Blanche, S. Tay, P. St Hilaire, R. Voorakaranam, J. Thomas, C. Christenson, R. A. Norwood, M. Yamamoto, N. Peyghambarian. An updateable holographic display for 3-D visualization (invited). <strong>IEEE Journal of Display Technology</strong> 4, 424 (2008).<br><br></td>
+  </tr>
+</tbody>
+
+<thead>
+  <tr>
+    <th><br>2007<br><br></th>
+  </tr>
+</thead>
+<tbody>
+    <tr>
+      <td class="span1"><br><h3>11</h3><br><br></td>
+      <td><br>S. Tay, J. Thomas, B. Momeni, P. Hotchkiss, M. Askari, S. Jones, A. Adibi, S. R. Marder, R. A. Norwood and N. Peyghambarian, “Planar photonic crystals infiltrated with nanoparticle/polymer composites.” <strong>Applied Physics Letters</strong>, 91, 221109 (2007)<br><br></td>
+  </tr>
+  <tr>
+      <td class="span1"><br><h3>10</h3><br><br></td>
+      <td><br>P. D. van Voorst, M. R. de Wit, H. L. Offerhaus, S. Tay, J. Thomas, N. Peyghambarian, K. –J. Boller. Holographic injection locking of a broad area laser diode via a photorefractive thin-film device. <strong>Optics Express</strong>, 15, 17587 (2007)<br><br></td>
+  </tr>
+
+  <tr>
+      <td class="span1"><br><h3>9</h3><br><br></td>
+      <td><br>M. Eralp, J. Thomas, S. Tay, G. Li, M. Yamamoto, A. Schulzgen, R. Norwood, N. Peyghambarian, “Efficient photorefractive polymer operating in reflection geometry.” <strong>Optics Express</strong>, 15, 11622 (2007)<br><br></td>
+  </tr>
+</tbody>
+
+<thead>
+  <tr>
+    <th><br>2006<br><br></th>
+  </tr>
+</thead>
+<tbody>
+    <tr>
+      <td class="span1"><br><h3>8</h3><br><br></td>
+      <td><br>S. Tay , N. Peyghambarian, “Photorefractive polymers and their applications in photonics” (invited) <strong>Sigma Journal of Engineering and Natural Sciences</strong>, 2005/4, Yildiz Technical University Press, Yildiz-Istanbul (2006)<br><br></td>
+  </tr>
+  <tr>
+      <td class="span1"><br><h3>7</h3><br><br></td>
+      <td><br>M. Eralp, J. Thomas, G. Li, S. Tay, A. Schülzgen, R. A. Norwood M. Yamamoto and N. Peyghambarian, “Photorefractive polymer device with video-rate response time operating at low voltages.” <strong>Optics Letters</strong>, 31, 1408 (2006) <%= link_to '[PDF]', '/publications/2006_optics_tay.pdf' -%><br><br></td>
+  </tr>
+  <tr>
+      <td class="span1"><br><h3>6</h3><br><br></td>
+      <td><br>M. Eralp, J. Thomas, S. Tay, G. Li, A. Schulzgen, R. Norwood, M. Yamamoto, N. Peyghambarian, “Submillisecond response of a photorefractive polymer under single nanosecond pulse exposure.” <strong>Applied Physics Letters</strong>, 89, 114105 (2006)<br><br></td>
+  </tr>
+</tbody>
+
+<thead>
+  <tr>
+    <th><br>2005<br><br></th>
+  </tr>
+</thead>
+<tbody>
+    <tr>
+      <td class="span1"><br><h3>5</h3><br><br></td>
+      <td><br>J. Thomas, M. Eralp, S. Tay, M. Yamamoto, G. Li, R. Norwood, S. R. Marder, N. Peyghambarian, “Photorefractive polymers with superior performance.” <strong>Optics and Photonics News</strong>, December (2005)<br><br></td>
+  </tr>
+  <tr>
+      <td class="span1"><br><h3>4</h3><br><br></td>
+      <td><br>S. Tay, J. Thomas, M. Eralp, G. Li, S. Marder, G. A. Walker, S. Barlow, M. Yamamoto, R. Norwood, A. Schülzgen and N. Peyghambarian, “High performance photorefractive polymer operating at 1550 nm with near video-rate response time.” <Strong>Applied Physics Letters</strong>, 87, 171105 (2005)<br><br></td>
+  </tr>
+  <tr>
+      <td class="span1"><br><h3>3</h3><br><br></td>
+      <td><br>G. Li, M. Eralp, J. Thomas, S. Tay, S. R. Marder, A. Schülzgen, R. A. Norwood and N. Peyghambarian, “All-optical dynamic correction of communication signals using a photorefractive polymeric hologram.” <strong>Applied Physics Letters</strong>, 86, 161103 (2005)<br><br></td>
+  </tr>
+</tbody>
+
+<thead>
+  <tr>
+    <th><br>2004<br><br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="span1"><br><h3>2</h3><br><br></td>
+    <td><br>S. Tay, J. Thomas, M. Eralp, G. Li, B. Kippelen, S. R. Marder, G. Meredith, A. Schülzgen and N. Peyghambarian. “Photorefractive polymer composite operating at the optical communication wavelength of 1550 nm.” <strong>Applied Physics Letters</strong>, 85, 4561 (2004)<br><br></td>
+  </tr>
+  <tr>
+      <td class="span1"><br><h3>1</h3><br><br></td>
+      <td><br>M. Eralp, J. Thomas, S. Tay, G. Li, G. Meredith, A. Schülzgen, N. Peyghambarian, G. A. Walker, S. Barlow, and S. R. Marder, “High performance photorefractive polymer operating at 975 nm.” <strong>Applied Physics Letters</strong>, 85, 1095 (2004)<br><br></td>
+  </tr>
+</tbody>
+</table>
+</div>
+
+  <div id = "footer" class="hidden-sm">
     <div class = "container">
       <div class = "row-fluid">
         <a class="span2" href="http://www.bsse.ethz.ch/"><img src="/home/D-BSSE_logo.jpg"></a>
-          <p class="span2 offset3"><br><br><br>The Tay Group 2013</p>
-          <a class="span2 offset3" href="http://www.ethz.ch/index_EN"><br><br><br><img src="/home/eth_logo.jpg"></a>
+          <p class="span3 offset3"><br><br><br>The Tay Group 2013</p>
+          <a class="span2 offset2" href="http://www.ethz.ch/index_EN"><br><br><br><img src="/home/eth_logo.jpg"></a>
       </div>
     </div>
   </div>
 
-  <div class="footer visible-phone" style="text-align: center">
+  <div class="footer visible-sm" style="text-align: center">
       <p>The Tay Group 2013</p>
   </div>
 </div>
 
 <!-- Javascript -->
-<script src="http://code.jquery.com/jquery.js"></script>
-<!-- Need to keep 3.0.0 RC1 javascript with bootstrap 2.3.2 css in order for dropdown menu to work in navbar -->
-<!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script> -->
-
-<script>
-  $('#myCarousel').carousel({
-  interval: 7000 // in milliseconds
-})
-</script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
 <script>
   $(".collapse").collapse()
+</script>
+
+<script>
+  $('.dropdown-toggle').dropdown()
 </script>
 
 <script>
@@ -254,6 +294,7 @@
     $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
   });
 </script>
+
 
 </body>
 </html>
