@@ -1,0 +1,160 @@
+<head>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
+
+<style type="text/css">
+thead {color:#222; font-size: 30px}
+tbody {color: #222;}
+
+h1{color: #222; font-size: 50px; font-weight: bold; letter-spacing: +5px; text-align:center;}
+h4{color: #222; font-size: 15px; font-weight: bold; letter-spacing: +5px; text-align:center;}
+
+
+th{border-top: 0px; border-bottom: 5px solid #161C40; background-image:url('billie_holiday.png'); letter-spacing: +3px}
+td{background-color: lightgrey; letter-spacing: +1px}
+
+tr{border-bottom: 2px solid #222; background-image:url('billie_holiday.png')}
+
+td:hover {background-color: #E8DDCB;}
+a {color:#161C40; font-weight: bold}
+td a{color:#161C40; font-weight: bold}}
+td:hover a{color:#161C40;}
+a.dropdown-toggle { outline: none}
+.dropdown-backdrop {position: static;}
+.dropdown-menu > li > a:hover {
+      color:#E8DDCB;
+      background:#031634;}
+#footer{
+    position:absolute;
+    left:0;
+    right:0;
+    height:300px;
+    background:#eeeeee; border-top: 1px solid lightgrey; padding-top: 80px; padding-bottom: 100px}
+body{padding-top: 70px}
+</style>
+</head>
+
+<body>
+  <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </a>
+        <a class="brand" href="/"><strong>Tay Group</strong></a>
+        <div class="nav-collapse">
+              <ul class="nav">
+                <li class="divider-vertical"></li>
+                <li class="dropdown active">
+                    <a href="/research" class="dropdown-toggle" data-toggle="dropdown">Research<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="/research"><strong>Reserach Overview</strong></a></li>
+                      <li><a href="/technology"><strong>Technologies and Capabilities</strong></a></li>
+                      <li><a href="/model"><strong>NF-&#954B Single-Cell Data and Model</strong></a></li>
+                    </ul>
+                </li>
+                <li><a href="/news"><strong>News</strong></a></li>
+                <li><a href="/publications"><strong>Publications</strong></a></li>
+                <li><a href="/people"><strong>People</strong></a></li>
+                <li><a href="/opportunities"><strong>Opportunities</strong></a></li>
+                <li><a href="/contact"><strong>Contact</strong></a></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "row-fluid hidden-phone" style="background-image:url('billie_holiday.png')">
+        <div class="span12"></div>
+    </div>
+
+<div class="row-fluid">
+  <div class="well-small" style="text-align: center; background-color: #021537">
+    <h1 class="hidden-phone" style="color:#E8DDCB">NF-&#954B Single-Cell <br> Data and Model</h1>
+  </div>
+</div>
+
+<div class = "row-fluid" style="background-image:url('billie_holiday.png')">
+    <div class="span12"></div>
+</div>
+
+<div class="container-fluid" style="border: 0px; background-color: lightgrey">
+  <div class = "row-fluid" style="background-color: lightgrey">
+    <div class = "well-large">
+      <h3 class="lead">General NF-&#954B Single-Cell Model Under TNF-&#945</h3>
+      <p>This model accompanied the paper published in Nature (Tay et al. doi: 10.1038/nature09145) on July 2010 (scripts at the bottom of page). It simulates single-cell NF-kappaB nuclear localization dynamics and the dynamics of an NF-kappaB dependent gene under TNF-alpha stimulation, under all relevant doses (100ng/ml to 0.01 ng/ml) and time courses (short pulse, multiple short pulses and tonic). <br>
+      The model uses stochastic ligand-receptor and trancription factor-gene binding dynamics and incorporates intrinsic and extrinsic noise. Furthermore, we assumed quadratic dependence of IKK activation to upstream IKKK levels to achieve switch like activation of cells. Finally, and most importantly, the model is fitted to a complete set of data collected from thousands of live single-cells measured under various doses, under identical conditions, for up to 12 hours with 6 minute temporal resolution. The model can be adapted to both microfluidic and normal cell culture environments by changing the available volume per cell. Also see Tomek Lipniacki's website for model development.<br>
+      Using our model, one can see how a single transcription factor such as NF-kappaB can modulate the expression of different classes of genes (early/late or transient/stable) and achieve specific outcomes (gene expression dynamics) by using oscillations. In this case, NF-kappaB acts as a master oscillator -a concept mostly encountered in electronics and photonics- and drives the dynamics of downstream genes. <br>
+      Through a master oscillator system architecture, one can achieve very diverse outcomes by changing only:</p>
+      <ol>
+        <li>the oscillation dynamics of the master (frequency, amplitude, damping)</li>
+        <br>
+        <li>the synthesis and degradation rates of the downstream gene (slave)</li>
+        <br>
+      </ol>
+      <p>This is a very efficient design evident in cells. We implemented the same strategy to simulate target genes in our model: we were able to capture the dose and time dependent expression profiles of all three classes of genes (early, mid, late) by using a very simple gene expression model that is driven by the master oscillator NF-kappaB. The dynamics of the master oscillator, of course, is more complex and require 15 ODE's and 30 biochemical parameters.<br>
+      Regardless, there are gene expression profiles that can not be reproduced with a single master oscillator. For those genes, such as CCL2, we expect contribution from at least two transcription factors with different dynamics: p65 (fast) and AP-1 (delayed).<br>
+      Enjoy!<br></p>
+  </div>
+</div>
+</div>
+
+<div class = "row-fluid" style="background-image:url('billie_holiday.png')">
+  <div class="span12"></div>
+</div>
+
+<div class="container-fluid" style="border: 0px; background-color: lightgrey">
+  <div class = "row-fluid" style="background-color: lightgrey">
+    <div class = "well-large">
+      <h3 class="lead">Files</h3>
+      <p><%= link_to 'Model Development (Supplementary Mathematical Methods)', '/model/model_methods.pdf' -%><br><br>
+
+        <%= link_to 'Deterministic model files (Zipped-Matlab)', '/model/ExtrinsicNoiseOnly.zip' -%><br><br>
+
+        <%= link_to 'Stochastic model files (Zipped-Matlab)', '/model/Stochastic.zip' -%><br>
+      </p>
+  </div>
+</div>
+</div>
+
+<div class = "row-fluid" style="background-image:url('billie_holiday.png')">
+  <div class="span12"></div>
+</div>
+
+ <div id = "footer" class="hidden-sm">
+    <div class = "container">
+      <div class = "row-fluid">
+        <a class="span2" href="http://www.bsse.ethz.ch/"><img src="/home/D-BSSE_logo.jpg"></a>
+          <p class="span3 offset3"><br><br><br>The Tay Group 2013</p>
+          <a class="span2 offset2" href="http://www.ethz.ch/index_EN"><br><br><br><img src="/home/eth_logo.jpg"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer visible-sm" style="text-align: center">
+      <p>The Tay Group 2013</p>
+  </div>
+</div>
+
+
+<!-- Javascript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<script>
+  $(".collapse").collapse()
+</script>
+
+<script>
+	$('.dropdown-toggle').dropdown()
+</script>
+
+<script>
+  $('.navbar .dropdown').hover(function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+  }, function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
+  });
+</script>
+
+</body>
