@@ -23,7 +23,6 @@ a.dropdown-toggle { outline: none}
 .dropdown-menu > li > a:hover {
       color:#E8DDCB;
       background:#031634;}
-
 #footer{
     position:absolute;
     left:0;
@@ -47,8 +46,8 @@ body{padding-top: 70px}
         <div class="nav-collapse">
               <ul class="nav">
                 <li class="divider-vertical"></li>
-                <li class="dropdown">
-                    <a href="/research" class="dropdown-toggle" style="background-color: #fafafa;background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);background-repeat: repeat-x;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);*zoom: 1;" data-toggle="dropdown"><strong>Research</strong><b class="caret"></b></a>
+                <li class="dropdown active">
+                    <a href="/research" class="dropdown-toggle" data-toggle="dropdown">Research<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                       <li><a href="/research"><strong>Reserach Overview</strong></a></li>
                       <li><a href="/technology"><strong>Technologies and Capabilities</strong></a></li>
@@ -59,70 +58,57 @@ body{padding-top: 70px}
                 <li><a href="/publications"><strong>Publications</strong></a></li>
                 <li><a href="/people"><strong>People</strong></a></li>
                 <li><a href="/opportunities"><strong>Opportunities</strong></a></li>
-                <li class="active"><a href="/contact"><strong>Contact</strong></a></li>
+                <li><a href="/contact"><strong>Contact</strong></a></li>
               </ul>
           </div>
         </div>
       </div>
     </div>
 
-<div class = "row-fluid hidden-phone" style="background-image:url('billie_holiday.png')">
-    <div class="span12"></div>
-</div>
+    <div class = "row-fluid hidden-phone" style="background-image:url('billie_holiday.png')">
+        <div class="span12"></div>
+    </div>
 
-<div class="row-fluid">
-  <div class="well-small" style="text-align: center; background-color: #021537">
-    <h1 class="hidden-phone" style="color:#E8DDCB">Contact</h1>
-  </div>
-</div>
 
 <div class = "row-fluid" style="background-image:url('billie_holiday.png')">
     <div class="span12"></div>
 </div>
 
-<div class="container-fluid" style="border: 0px; border-color: blue; background-color: lightgrey">
-  <div class = "well-large">
-      <h3 class="lead" style="letter-spacing: +3px">Address</h3>
-      <address style="color: #222">
-        <strong>ETH Zürich, Dept. Biosysteme Basel</strong><br>
-        Prof. Tay Group<br>
-        1058 4.50<br>
-        Mattenstrasse 26<br> 
-        4058 Basel<br>
-        Schweiz<br><br>
-        <p>Lab Phone: +41 61 387 33 51/52/53</p>
-        <p>Secretary Phone: +41 61 387 31 99</p>
-        <p>Savas Tay Phone: +41 61 387 33 50</p>
-      </address>
-    </div>
-  </div>
 
-  <div class = "row-fluid" style="background-color: lightgrey">
-    <iframe class = "span10 offset1" width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Mattenstrasse+26,+Basel,+Switzerland&amp;aq=0&amp;oq=mattenstrasse+26&amp;sll=47.554615,7.59446&amp;sspn=0.199034,0.527344&amp;ie=UTF8&amp;hq=&amp;hnear=Mattenstrasse+26,+4058+Basel,+Basel-Stadt,+Switzerland&amp;t=h&amp;ll=47.566089,7.602303&amp;spn=0.002457,0.003433&amp;z=18&amp;iwloc=A&amp;output=embed"></iframe><br />
-  </div>
 
+<div class="container-fluid" style="border: 0px; background-color: lightgrey">
   <div class = "row-fluid" style="background-color: lightgrey">
-    <div class="span12"></div>
+    <div class = "well-large">
+      <h3 class="lead">Microfluidic Cell Culture Resources</h3>
+      <p>
+		Website of Rafael Gómez-Sjöberg: <%= link_to 'Automated Cell Culture', 'https://sites.google.com/site/rafaelsmicrofluidicspage/automated-cell-culture' -%><br><br>
+        Valve Controller software: <%= link_to 'USB-Valve-Controller_Software.zip', '/USB-Valve-Controller_Software.zip' -%><br><br>
+        Cell Culture Chip GUI (requires Valve Controller Software): <%= link_to 'CCC_GUI.zip', '/CCC_GUI.zip' -%> <%= link_to 'Setup steps', 'CCC_GUI_setup.txt' -%><br><br> 
+       
+      </p>
   </div>
+</div>
 </div>
 
 <div class = "row-fluid" style="background-image:url('billie_holiday.png')">
   <div class="span12"></div>
 </div>
 
-  <div id = "footer" class="hidden-sm">
+ <div id = "footer" class="hidden-sm">
     <div class = "container">
       <div class = "row-fluid">
         <a class="span2" href="http://www.bsse.ethz.ch/"><img src="/home/D-BSSE_logo.jpg"></a>
-          <p class="span3 offset3"><br><br><br>The Tay Group 2014</p>
+          <p class="span3 offset3"><br><br><br>The Tay Group 2013</p>
           <a class="span2 offset2" href="http://www.ethz.ch/index_EN"><br><br><br><img src="/home/eth_logo.jpg"></a>
       </div>
     </div>
   </div>
 
   <div class="footer visible-sm" style="text-align: center">
-      <p>The Tay Group 2014</p>
+      <p>The Tay Group 2013</p>
   </div>
+</div>
+
 
 <!-- Javascript -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
@@ -132,12 +118,15 @@ body{padding-top: 70px}
 </script>
 
 <script>
+	$('.dropdown-toggle').dropdown()
+</script>
+
+<script>
   $('.navbar .dropdown').hover(function() {
     $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
   }, function() {
     $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
   });
 </script>
-
 
 </body>

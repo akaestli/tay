@@ -1,7 +1,8 @@
 <html>
 <head>
 
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
+
 
 <style type="text/css">
 thead {color:#222; font-size: 30px}
@@ -9,7 +10,7 @@ tbody {color: #222;}
 
 h1{color: #222; font-size: 50px; font-weight: bold; letter-spacing: +5px; text-align:center;}
 h4{color: #222; font-size: 15px; font-weight: bold; letter-spacing: +5px; text-align:center;}
-h3{color: black; font-size: 20px; font-weight: bold; letter-spacing: +5px; text-align:center;}
+h3{color: #B40404; font-size: 20px; font-weight: bold; letter-spacing: +5px; text-align:center;}
 
 th{border-top: 0px; border-bottom: 5px solid #021537; background-image:url('billie_holiday.png'); letter-spacing: +3px}
 td{background-color: lightgrey; letter-spacing: +1px}
@@ -17,8 +18,8 @@ td{background-color: lightgrey; letter-spacing: +1px}
 tr{border-bottom: 2px solid #222; background-image:url('billie_holiday.png')}
 
 td:hover {background-color: #eeeeee;}
-a {color:#161C40; font-weight: bold}
-td:hover a{color:#161C40;}
+a {color:#B40404; font-weight: bold}
+td:hover a{color:#B40404;}
 a.dropdown-toggle { outline: none}
 .dropdown-backdrop {position: static;}
 .dropdown-menu > li > a:hover {
@@ -83,44 +84,120 @@ body{padding-top: 70px}
 <div class ="row-fluid">
 <table class = "table table-hover">
 <thead>
+
+<thead>
   <tr>
-    <th><br>2013<br><br></th>
+    <th><br>2015<br><br></th>
   </tr>
 </thead>
 <tbody>
-  <tr>
-      <td class="span1"><br><h3>22</h3><br><br></td>
-      <td><br>Pekalski J, Zuk PJ, Junkin M, Kellogg R, Tay S, Lipniacki T. "Stochastic NF-kappaB activation via autocrine TNFalpha signaling." Accepted, <strong>PLOS One</strong><br><br></td>
+
+  <tr class="citation">
+    <td class="span1"><h3>28</h3><br></td>
+    <td class="span8"><br>R. Kellogg, S. Tay. "Noise facilitates transcriptional control under dynamic inputs." <strong>Cell</strong>, (2015) (in press)
+    <br><br>
+    <p class="span12 abstract" style="display: none">test ...</p>
+    </td>
+    <td class="span3">
+      <br>
+      <a class='showAbstract'>[Show Abstract]</a>
+      <br>
+      <%= link_to '[PDF]', '/publications/2014_loc_mehling.pdf' -%><br><br>
+    </td>
   </tr>
+  </tr>
+
+</tbody>
+
+<thead>
+
+<thead>
   <tr>
-      <td class="span1"><br><h3>21</h3><br><br></td>
-      <td><br>Kellogg R, Lipniacki T, Quake SR, Tay S. "Digital time-delayed NF-kappaB dynamics encode endotoxin dose", submitted <br><br></td>
+    <th><br>2014<br><br></th>
+  </tr>
+</thead>
+<tbody>
+
+  <tr>
+    <td class="span1"><h3>27</h3><br></td>
+    <td class="span8"><br>D. Alsteens, S. Tay, D. Muller. "Towards high-throughput biomechanical phenotyping of single molecules (news and views)." <strong>Nature Methods</strong>, (2014) (in press)<br><br></td>
+    <td class="span1">
+      <br></td>
+  </tr>
+
+  <tr class="citation">
+      <td class="span1"><h3>26</h3><br></td>
+      <td class="span8"><br>M. Mehling,* T. Frank,* C. Albayrak, S. Tay. "Real-time tracking, retrieval and gene expression analysis of migrating human T cells." <strong>Lab on a Chip</strong>, (2014) DOI: 10.1039/C4LC01038H<br><br>
+      
+      <p class="span12 abstract" style="display: none">Dynamical analysis of single-cells allows assessment of the extent and role of cell-to-cell variability,however traditional dish-and-pipette techniques have hindered single-cell analysis in quantitative biology. We developed an automated microfluidic cell culture system that generates stable diffusionbased chemokine gradients, where cells can be placed in predetermined positions, monitored via single-cell time-lapse microscopy, and subsequently be retrieved based on their migration speed and directionality for further off-chip gene expression analysis, constituting a powerful platform for multiparameter quantitative studies of single-cell chemotaxis. Using this system we studied CXCL12- directed migration of individual human primary T cells. Spatiotemporally deterministic retrieval of T cell subsets in relation to their migration speed, and subsequent analysis with microfluidic droplet digitalPCR showed that the expression level of CXCR4 -the receptor of CXCL12- underlies enhanced human T cell chemotaxis.</p>
+      </td>
+
+      <td class="span3">
+        <br>
+        <a class='showAbstract'>[Show Abstract]</a>
+        <br>
+        <%= link_to '[PDF]', '/publications/2014_loc_mehling.pdf' -%><br><br>
+    </td>
   </tr>
 
   <tr>
-    <td class="span1"><br><h3>20</h3><br><br></td>
+    <td class="span1"><h3>25</h3><br></td>
+    <td><br>R. Kellogg, R. Gómez-Sjöberg, A. A. Leyrat, S. Tay. “High-throughput microfluidic single-cell analysis pipeline for studies of signaling dynamics.” <strong>Nature Protocols</strong>, 9(7): 1713-26 (2014) <%= link_to '[PDF]', '/publications/2014_nprot_kellogg.pdf' -%> <br><br></td>
+  </tr>
+
+  <tr>
+    <td class="span1"><h3>24</h3><br></td>
+    <td><br>M. Junkin, S. Tay. “Microfluidic single-cell analysis for systems immunology.” <strong>Lab on a Chip</strong>, 14: 1246-60 (2014) <%= link_to '[PDF]', '/publications/2014_loc_junkin.pdf' -%> <br><br></td>
+  </tr>
+
+  <tr>
+      <td class="span1"><h3>23</h3><br></td>
+      <td><br>F. Jaksch, S. Tay. “Analytical Biotechnology: New technologies for the quantitative analysis of biological specimens and natural products.” <strong>Current Opinion in Biotechnology</strong>, 25:iv-vi (2014) <%= link_to '[PDF]', '/publications/2014_CurrentOpinionInBiotechnology_tay.pdf' -%> <br><br></td>
+  </tr>
+
+  <tr>
+      <td class="span1"><h3>22</h3><br></td>
+      <td><br>M. Mehling, S. Tay. “Microfluidic cell culture.” <strong>Current Opinion in Biotechnology</strong>, 25:95–102 (2014)
+        <%= link_to '[PDF]', '/publications/2014_CurrentOpinionInBiotechnology_Mehling.pdf' -%> <br><br></td>
+  </tr>
+</tbody>
+
+<thead>
+  <tr>
+      <th><br>2013<br><br></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+      <td class="span1"><h3>21</h3><br></td>
+      <td><br>J. Pekalski, P. J. Zuk, M. Kochanczyk, M. Junkin, R. Kellogg, S. Tay, T. Lipniacki. “Spontaneous NF-kB activation by the autocrine TNF signaling: A computational analysis.” <strong>PLOS One</strong>, 8(11) (2013)
+      <%= link_to '[PDF]', '/publications/2013_plosone_pekalski.pdf' -%><br><br></td>
+  </tr>
+
+  <tr>
+    <td class="span1"><h3>20</h3><br></td>
     <td>
 
-      <div class="span2">
-        <%= image_tag '/publications/loc_cover_tino.jpg', :alt => 'tino loc cover', :class => "img-polaroid" %> 
+      <div class="span2"><br>
+        <%= image_tag '/publications/loc_cover_tino.jpg', :alt => 'tino loc cover', :class => "img-polaroid" %> <br><br>
       </div>
 
       <div class="span9" style="#position: absolute; #top: 50%;display: table-cell; vertical-align: middle;"><br>
-        Frank T, Tay S. "Flow-switching allows independently programmable, extremely stable, high-throughput diffusion-based gradients". <strong>Lab on a Chip</strong>, 13, 1273 (2013).
+        T. Frank, S. Tay. “Flow-switching allows independently programmable, extremely stable, high-throughput diffusion-based gradients.” <strong>Lab on a Chip</strong>, 13:1273–81 (2013)
         <%= link_to '[PDF]', '/publications/2013_loc_frank.pdf' -%> 
         <%= link_to '(Correction)', '/publications/2013_loc_frank_correction.pdf' -%> 
 
         <br><br>
         <i>(Featured cover article)</i>
         <br><br>
-        <i> <%= link_to 'HOT', 'http://blogs.rsc.org/lc/2013/05/03/trio-of-hot-articles-reversible-phase-transitions-super-strong-adhesive-and-flow-switching-for-programmable-gradients/' -%>  article at RSC blog </i>
+        <i> <%= link_to 'HOT', 'http://blogs.rsc.org/lc/2013/05/03/trio-of-hot-articles-reversible-phase-transitions-super-strong-adhesive-and-flow-switching-for-programmable-gradients/' -%>  article at RSC blog </i><br><br>
       </div>
     </td>
   </tr>
 
   <tr>
-      <td class="span1"><br><h3>19</h3><br><br></td>
-      <td><br>S. Vedel,* S. Tay,* D. Johnston, H. Bruus, S. R. Quake. "Migration of cells in social context". <strong>PNAS</strong>, 110, 129 (2013) (*equal contribution) <%= link_to '[PDF]', '/publications/2012_pnas.pdf' -%><br><br></td>
+      <td class="span1"><h3>19</h3><br></td>
+      <td><br>S. Vedel,* S. Tay,* D. Johnston, H. Bruus, S. R. Quake. “Migration of cells in social context.” <strong>PNAS</strong>, 110(1):129-34 (2013) (*equal contribution) <%= link_to '[PDF]', '/publications/2012_pnas.pdf' -%><br><br></td>
   </tr>
 </tbody>
 
@@ -131,16 +208,16 @@ body{padding-top: 70px}
 </thead>
 <tbody>
     <tr>
-      <td class="span1"><br><h3>18</h3><br><br></td>
-      <td><br>S. Tay,* J. J. Hughey,* T. K. Lee, T. Lipniacki, S. R. Quake, M. W. Covert. “Single-cell NF-kappaB dynamics reveal digital activation and analogue information processing.” <strong>Nature</strong>, 466, 267 (2010) (*equal contribution)
+      <td class="span1"><h3>18</h3><br></td>
+      <td><br>S. Tay,* J. J. Hughey,* T. K. Lee, T. Lipniacki, S. R. Quake, M. W. Covert. “Single-cell NF-kappaB dynamics reveal digital activation and analogue information processing.” <strong>Nature</strong>, 466(7303): 267-71 (2010) (*equal contribution)
 
         <%= link_to '[PDF]', '/publications/2010_Nature_Tay.pdf' -%>
 
         <br><br><i>Ranked "exceptional" by Faculty of 1000 Biology, and was covered by "The Seven Stones" EMBO, Biotechniques.com, and many others.</i><br><br></td>
   </tr>
   <tr>
-      <td class="span1"><br><h3>17</h3><br><br></td>
-      <td><br>C. Christenson, P. Blanche, S. Tay, R. Voorakaranam, T. Gu, P. Wang, M. Yamamoto, R. Norwood, N. Peyghambarian. “Materials for an updateable holographic display”, <strong>IEEE Journal of Display Technology</strong>, 99, 1 (2010)
+      <td class="span1"><h3>17</h3><br></td>
+      <td><br>C. Christenson, P. Blanche, S. Tay, R. Voorakaranam, T. Gu, P. Wang, M. Yamamoto, R. Norwood, N. Peyghambarian. “Materials for an updateable holographic display.” <strong>IEEE Journal of Display Technology</strong>, 6(10): 510 - 16 (2010)
         <%= link_to '[PDF]', '/publications/2010_IEEE_Christenson.pdf' -%> <br><br></td>
   </tr>
 </tbody>
@@ -152,7 +229,7 @@ body{padding-top: 70px}
 </thead>
 <tbody>
     <tr>
-      <td class="span1"><br><h3>16</h3><br><br></td>
+      <td class="span1"><h3>16</h3><br></td>
       <td><br>S. Tay, A. Kropachev, I. E. Araci, R. A. Norwood, T. Skotheim, N. Peyghambarian, “Plasmonic thermal IR emitters based on nano-amorphous carbon.” <strong>Applied Physics Letters</strong>, 94, 071113 (2009) <%= link_to '[PDF]', '/publications/2009_apl_tay.pdf'-%><br><br></td>
   </tr>
 </tbody>
@@ -164,21 +241,21 @@ body{padding-top: 70px}
 </thead>
 <tbody>
   <tr>
-      <td class="span1"><br><h3>15</h3><br><br></td>
+      <td class="span1"><h3>15</h3><br></td>
       <td><br>S. Tay, P. Blanche, R. Voorakaranam, A. V. Tunc, J. Thomas, S. Rokutanda, R. Flores, P. Wang, G. Li, W. Lin, T. Gu, P. St. Hilaire, R. Norwood, M. Yamamoto, P. Wang and N. Peyghambarian, “An updateable holographic three-dimensional display.” <strong>Nature</strong>, 451, 694 (2008) <%= link_to '[PDF]', '/publications/2008_nature_tay.pdf' -%><br><br><i>This paper was covered by: CNN, Discovery Channel, National Geographic, BBC, NPR (National Public Radio), Photonics Spectra, Chemistry World, Physics World, Photonics Spectra, New Scientist, ABC News, Photonics.com, Daily Telegraph, Nikkei Newspaper, Optics.org, MIT Technology Review, Materials World, Laser Focus World, Die Welt, The Herald, IEEE Spectrum, Science et Vie and many others.</i><br><br></td>
   </tr>
   <tr>
-      <td class="span1"><br><h3>14</h3><br><br></td>
-      <td><br>S. Tay, N. Peyghambarian, “Updateable holographic 3D displays based on photorefractive polymers” (invited) <strong>Society for Information Display</strong>, 24, 07, (2008)<br><br></td>
+      <td class="span1"><h3>14</h3><br></td>
+      <td><br>S. Tay, N. Peyghambarian, "Updateable holographic 3D displays based on photorefractive polymers" (Invited). <strong>Society for Information Display</strong>, 24, 07, (2008)<br><br></td>
   </tr>
   <tr>
-      <td class="span1"><br><h3>13</h3><br><br></td>
-      <td><br> N. Peyghambarian, S. Tay, P. Blanche, R. Norwood, M. Yamamoto, Rewritable holographic 3D displays” (invited) (Cover article). <strong>Optics and Photonics News</strong> (2008) <%= link_to '[PDF]', '/publications/2008_opn_tay.pdf' -%><br><br></td>
+      <td class="span1"><h3>13</h3><br></td>
+      <td><br> N. Peyghambarian, S. Tay, P. Blanche, R. Norwood, M. Yamamoto, "Rewritable holographic 3D displays" (Invited) (Cover article). <strong>Optics and Photonics News</strong> (2008) <%= link_to '[PDF]', '/publications/2008_opn_tay.pdf' -%><br><br></td>
   </tr>
 
   <tr>
-      <td class="span1"><br><h3>12</h3><br><br></td>
-      <td><br>P. A. Blanche, S. Tay, P. St Hilaire, R. Voorakaranam, J. Thomas, C. Christenson, R. A. Norwood, M. Yamamoto, N. Peyghambarian. An updateable holographic display for 3-D visualization (invited). <strong>IEEE Journal of Display Technology</strong> 4, 424 (2008).<br><br></td>
+      <td class="span1"><h3>12</h3><br></td>
+      <td><br>P. A. Blanche, S. Tay, P. St Hilaire, R. Voorakaranam, J. Thomas, C. Christenson, R. A. Norwood, M. Yamamoto, N. Peyghambarian. "An updateable holographic display for 3-D visualization" (Invited). <strong>IEEE Journal of Display Technology</strong> 4, 424 (2008)<br><br></td>
   </tr>
 </tbody>
 
@@ -189,16 +266,16 @@ body{padding-top: 70px}
 </thead>
 <tbody>
     <tr>
-      <td class="span1"><br><h3>11</h3><br><br></td>
+      <td class="span1"><h3>11</h3><br></td>
       <td><br>S. Tay, J. Thomas, B. Momeni, P. Hotchkiss, M. Askari, S. Jones, A. Adibi, S. R. Marder, R. A. Norwood and N. Peyghambarian, “Planar photonic crystals infiltrated with nanoparticle/polymer composites.” <strong>Applied Physics Letters</strong>, 91, 221109 (2007)<br><br></td>
   </tr>
   <tr>
-      <td class="span1"><br><h3>10</h3><br><br></td>
-      <td><br>P. D. van Voorst, M. R. de Wit, H. L. Offerhaus, S. Tay, J. Thomas, N. Peyghambarian, K. –J. Boller. Holographic injection locking of a broad area laser diode via a photorefractive thin-film device. <strong>Optics Express</strong>, 15, 17587 (2007)<br><br></td>
+      <td class="span1"><h3>10</h3><br></td>
+      <td><br>P. D. van Voorst, M. R. de Wit, H. L. Offerhaus, S. Tay, J. Thomas, N. Peyghambarian, K. –J. Boller. "Holographic injection locking of a broad area laser diode via a photorefractive thin-film device." <strong>Optics Express</strong>, 15, 17587 (2007)<br><br></td>
   </tr>
 
   <tr>
-      <td class="span1"><br><h3>9</h3><br><br></td>
+      <td class="span1"><h3>9</h3><br></td>
       <td><br>M. Eralp, J. Thomas, S. Tay, G. Li, M. Yamamoto, A. Schulzgen, R. Norwood, N. Peyghambarian, “Efficient photorefractive polymer operating in reflection geometry.” <strong>Optics Express</strong>, 15, 11622 (2007)<br><br></td>
   </tr>
 </tbody>
@@ -210,15 +287,15 @@ body{padding-top: 70px}
 </thead>
 <tbody>
     <tr>
-      <td class="span1"><br><h3>8</h3><br><br></td>
-      <td><br>S. Tay , N. Peyghambarian, “Photorefractive polymers and their applications in photonics” (invited) <strong>Sigma Journal of Engineering and Natural Sciences</strong>, 2005/4, Yildiz Technical University Press, Yildiz-Istanbul (2006)<br><br></td>
+      <td class="span1"><h3>8</h3><br></td>
+      <td><br>S. Tay , N. Peyghambarian, “Photorefractive polymers and their applications in photonics” (Invited) <strong>Sigma Journal of Engineering and Natural Sciences</strong>, 2005/4, Yildiz Technical University Press, Yildiz-Istanbul (2006)<br><br></td>
   </tr>
   <tr>
-      <td class="span1"><br><h3>7</h3><br><br></td>
+      <td class="span1"><h3>7</h3><br></td>
       <td><br>M. Eralp, J. Thomas, G. Li, S. Tay, A. Schülzgen, R. A. Norwood M. Yamamoto and N. Peyghambarian, “Photorefractive polymer device with video-rate response time operating at low voltages.” <strong>Optics Letters</strong>, 31, 1408 (2006) <%= link_to '[PDF]', '/publications/2006_optics_tay.pdf' -%><br><br></td>
   </tr>
   <tr>
-      <td class="span1"><br><h3>6</h3><br><br></td>
+      <td class="span1"><h3>6</h3><br></td>
       <td><br>M. Eralp, J. Thomas, S. Tay, G. Li, A. Schulzgen, R. Norwood, M. Yamamoto, N. Peyghambarian, “Submillisecond response of a photorefractive polymer under single nanosecond pulse exposure.” <strong>Applied Physics Letters</strong>, 89, 114105 (2006)<br><br></td>
   </tr>
 </tbody>
@@ -230,15 +307,15 @@ body{padding-top: 70px}
 </thead>
 <tbody>
     <tr>
-      <td class="span1"><br><h3>5</h3><br><br></td>
+      <td class="span1"><h3>5</h3><br></td>
       <td><br>J. Thomas, M. Eralp, S. Tay, M. Yamamoto, G. Li, R. Norwood, S. R. Marder, N. Peyghambarian, “Photorefractive polymers with superior performance.” <strong>Optics and Photonics News</strong>, December (2005)<br><br></td>
   </tr>
   <tr>
-      <td class="span1"><br><h3>4</h3><br><br></td>
+      <td class="span1"><h3>4</h3><br></td>
       <td><br>S. Tay, J. Thomas, M. Eralp, G. Li, S. Marder, G. A. Walker, S. Barlow, M. Yamamoto, R. Norwood, A. Schülzgen and N. Peyghambarian, “High performance photorefractive polymer operating at 1550 nm with near video-rate response time.” <Strong>Applied Physics Letters</strong>, 87, 171105 (2005)<br><br></td>
   </tr>
   <tr>
-      <td class="span1"><br><h3>3</h3><br><br></td>
+      <td class="span1"><h3>3</h3><br></td>
       <td><br>G. Li, M. Eralp, J. Thomas, S. Tay, S. R. Marder, A. Schülzgen, R. A. Norwood and N. Peyghambarian, “All-optical dynamic correction of communication signals using a photorefractive polymeric hologram.” <strong>Applied Physics Letters</strong>, 86, 161103 (2005)<br><br></td>
   </tr>
 </tbody>
@@ -250,11 +327,11 @@ body{padding-top: 70px}
 </thead>
 <tbody>
   <tr>
-    <td class="span1"><br><h3>2</h3><br><br></td>
+    <td class="span1"><h3>2</h3><br></td>
     <td><br>S. Tay, J. Thomas, M. Eralp, G. Li, B. Kippelen, S. R. Marder, G. Meredith, A. Schülzgen and N. Peyghambarian. “Photorefractive polymer composite operating at the optical communication wavelength of 1550 nm.” <strong>Applied Physics Letters</strong>, 85, 4561 (2004)<br><br></td>
   </tr>
   <tr>
-      <td class="span1"><br><h3>1</h3><br><br></td>
+      <td class="span1"><h3>1</h3><br></td>
       <td><br>M. Eralp, J. Thomas, S. Tay, G. Li, G. Meredith, A. Schülzgen, N. Peyghambarian, G. A. Walker, S. Barlow, and S. R. Marder, “High performance photorefractive polymer operating at 975 nm.” <strong>Applied Physics Letters</strong>, 85, 1095 (2004)<br><br></td>
   </tr>
 </tbody>
@@ -265,14 +342,14 @@ body{padding-top: 70px}
     <div class = "container">
       <div class = "row-fluid">
         <a class="span2" href="http://www.bsse.ethz.ch/"><img src="/home/D-BSSE_logo.jpg"></a>
-          <p class="span3 offset3"><br><br><br>The Tay Group 2013</p>
+          <p class="span3 offset3"><br><br><br>The Tay Group 2014</p>
           <a class="span2 offset2" href="http://www.ethz.ch/index_EN"><br><br><br><img src="/home/eth_logo.jpg"></a>
       </div>
     </div>
   </div>
 
   <div class="footer visible-sm" style="text-align: center">
-      <p>The Tay Group 2013</p>
+      <p>The Tay Group 2014</p>
   </div>
 </div>
 
@@ -294,6 +371,38 @@ body{padding-top: 70px}
     $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
   });
 </script>
+
+<script>
+$( '.showAbstract' ).click(function() {
+  // $('.abstract').slideToggle( "slow" );
+  $(this).closest('.citation').find('.abstract').slideToggle( "slow" );
+});
+
+// $( "p" ).click(function() {
+//   $( this ).slideUp();
+// });
+
+//  $("showAbstract").click(function(){
+//    $("p").toggleClass("active").parent().siblings().slideToggle("slow");
+//    return false;
+//  });
+
+//  $("showAbstract").click(function() {
+//     $(this).closest('.test').slideToggle();
+// });
+
+//   $("showAbstract").click(function() {
+//     $(this).closest('.spGroupViewSection').find('.spSubGroupView').slideToggle();
+// });
+
+// $("showAbstract").click(function(){
+//   $(this).toggleClass("active").closest("p").find("p").slideToggle("slow");
+//   return false;
+//  });
+
+</script>
+
+<body>
 
 
 </body>

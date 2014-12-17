@@ -154,42 +154,36 @@ a.dropdown-toggle { outline: none}
       <div class="carousel-inner">
 
         <div class="item active">
-          <%= image_tag '/home/group.jpg', :alt => 'group', :style => 'max-width: 100%'%>
-          <div class="carousel-caption">
-            <h2><a href="people" style="color:white">Tay Group Photo in July 2013<br></a></h2>
-          </div>
+          <%= image_tag '/home/michael_chip.jpg', :alt => 'group', :style => 'max-width: 100%'%>
         </div>
 
-      <div class="item">
-          <%= image_tag '/home/button_chip.jpg', :alt => 'button', :style => 'max-width: 100%'%>
-          <div class="carousel-caption">
-            <h2><a href="research" style="color:white">Single Cell Microfluidics<br></a></h2>
-          <p style="color:white"></p>
+        <div class="item">
+          <%= image_tag '/home/group_spring_2014.jpg', :alt => 'group', :style => 'max-width: 100%'%>
         </div>
-      </div>
+
+        <div class="item">
+            <%= image_tag '/home/button_chip.jpg', :alt => 'button', :style => 'max-width: 100%'%>
+        </div>
 
         <div class="item">
             <%= image_tag '/home/tino_chip_1.jpg', :alt => 'tino_chip_1', :style => 'max-width: 100%'%>
-            <div class="carousel-caption" style:"width:100%">
-              <h2><a href="research" style="color:white">Microfluidic Gradients</a></h2>
-              <p style="color:white">We developed a new microfluidic chip that creates and maintains stable, diffusion based spatial gradients of signaling molecules such as morphogens or chemokines. We are using this technology to investigate spatial patterning of 2D and 3D tissue and cells. This system is especially suited for studies of cell migration and development. <%= link_to '[PDF]', '/publications/2013_loc_frank.pdf', {:style => 'color: white; font-weight: bold'} -%><br><br></p>
-            </div>
           </div>
 
           <div class="item">
             <%= image_tag '/home/trapped_macrophage.jpg', :alt => 'trapped_macrophage', :style => 'max-width: 100%'%>
-              <div class="carousel-caption">
-                <h2><a href="research" style="color:white">Single Cell Trap</a></h2>
-              <p style="color:white">A single cell captured in a cell trap.<br><br></p>
-            </div>
           </div>
 
           <div class="item">
             <%= image_tag '/home/gradient_cells_1.jpg', :alt => 'gradient', :style => 'max-width: 100%'%>
-              <div class="carousel-caption">
-                <h2><a href="research" style="color:white">3T3 Cells in a TNF-&#945 Gradient</a></h2>
-            </div>
           </div>
+
+        <div class="item">
+          <%= image_tag '/home/group_elevator_spring_2014.jpg', :alt => 'group', :style => 'max-width: 100%'%>
+        </div>
+
+        <div class="item">
+            <%= image_tag '/home/retreat_2014.jpg', :alt => 'retreat_2014', :style => 'max-width: 100%'%>
+        </div>
 
       </div>
 
@@ -203,12 +197,12 @@ a.dropdown-toggle { outline: none}
   </a>
     </div><!-- /.carousel -->
 
-  <div class="container" style="background: #eeeeee; padding-top: 20px; border: 1px solid lightgrey;">
+<!--   <div class="container" style="background: #eeeeee; padding-top: 20px; border: 1px solid lightgrey;">
       <div class="row-fluid">
           <a class="span2 offset2" href="http://www.bsse.ethz.ch/"><img src="/home/D-BSSE_logo.jpg"></a>
           <a class="span2 offset4" href="http://www.ethz.ch/index_EN"><br><br><br><img src="/home/eth_logo.jpg"></a>
       </div>
-  </div>
+  </div> -->
 
   <div class ="row-fluid">
   <table class = "table">
@@ -224,6 +218,31 @@ a.dropdown-toggle { outline: none}
       </tr>
     </thead>
     <tbody>
+
+    <tr>
+      <td><br>Hsiung-Lin was awarded the <%= link_to 'EMBO Long-Term Fellowship', 'http://www.embo.org/funding-awards/fellowships/long-term-fellowships' -%>! (December 2014)<br><br></td>
+    </tr>
+
+    <tr>
+      <td><br>Matthias and Tino's paper <%= link_to '"Real-time tracking, retrieval and gene expression analysis of migrating human T cells"', '/publications/2014_loc_mehling.pdf' -%> was accepted to Lap on a Chip. (December 2014) <br><br></td>
+    </tr>
+
+    <tr>
+      <td><br>Alicia participated in a movie about studying Biotechnology at the D-BSSE. (November 2014) <br><br>
+
+        <div class="span3"></div>
+        <iframe width="465" height="262" src="//www.youtube.com/embed/NFnj5rLDtV4?list=UURNo2gqj3GiHlmT_OnqkouA" frameborder="0" allowfullscreen></iframe>
+        <div class="span3"></div><br><br>
+      </td>
+    </tr>
+
+    <tr>
+      <td><br>Ryan's paper <%= link_to '"High-throughput microfluidic single-cell analysis pipeline for studies of signaling dynamics"', '/publications/2014_nprot_kellogg.pdf' -%> was published in Nature Protocols. (June 2014) <br><br></td>
+    </tr>
+
+    <tr>
+      <td><br>Serap was awarded the <%= link_to 'ETH Zurich Postdoc Fellowship', 'https://www.ethz.ch/en/research/research-promotion/eth-internal-programmes/eth-fellowships.html' -%>!<br><br></td>
+    </tr>
 
       <tr>
         <td><br>Our new review article <%= link_to '"Microfluidic single-cell analysis for systems immunology"', '/publications/2014_loc_junkin.pdf' -%> is one of the most downloaded papers in Lab on a Chip! (February 2014)<br><br></td>
@@ -246,7 +265,7 @@ a.dropdown-toggle { outline: none}
               <%= image_tag '/news/erc.jpg', :alt => 'erc logo', :class => "img-polaroid hidden-phone" %> 
             </div>
 
-            <div class="span10 hidden-phone"><br class="hidden-phone"><br class="hidden-phone">Savas Tay was awarded the prestigious <%= link_to 'ERC Starting Grant', 'http://erc.europa.eu/starting-grants' -%> with the proposal titled "SingleCellDynamics: Optofluidic toolkit for systems immunology" (June 2013)<br class="hidden-phone"><br class="hidden-phone"></div>
+            <div class="span10 hidden-phone"><br class="hidden-phone"><br class="hidden-phone">Savas Tay was awarded the prestigious <%= link_to 'ERC Starting Grant', 'http://erc.europa.eu/starting-grants' -%> with the proposal titled "SingleCellDynamics: Optofluidic toolkit for systems immunology." (June 2013)<br class="hidden-phone"><br class="hidden-phone"></div>
 
         </td>
       </tr>
@@ -257,7 +276,7 @@ a.dropdown-toggle { outline: none}
               <%= image_tag '/publications/loc_cover_tino.jpg', :alt => 'tino loc cover'%> 
             </div>
 
-            <div class="span10"><br><br><br><br><br><%= link_to 'Tino\'s paper', '/publications/2013_loc_frank.pdf' -%> is published as a feature article in Lab on a Chip (January 2013)<br></div>
+            <div class="span10"><br><br><br><br><br><%= link_to 'Tino\'s paper', '/publications/2013_loc_frank.pdf' -%> is published as a feature article in Lab on a Chip. (January 2013)<br></div>
         </td>
         </td>
       </tr>
@@ -280,14 +299,14 @@ a.dropdown-toggle { outline: none}
     <div class = "container">
       <div class = "row-fluid">
         <a class="span2" href="http://www.bsse.ethz.ch/"><img src="/home/D-BSSE_logo.jpg"></a>
-          <p class="span3 offset3"><br><br><br>The Tay Group 2013</p>
+          <p class="span3 offset3"><br><br><br>The Tay Group 2014</p>
           <a class="span2 offset2" href="http://www.ethz.ch/index_EN"><br><br><br><img src="/home/eth_logo.jpg"></a>
       </div>
     </div>
   </div>
 
   <div class="footer visible-sm" style="text-align: center">
-      <p>The Tay Group 2013</p>
+      <p>The Tay Group 2014</p>
   </div>
 </div>
 
@@ -312,4 +331,5 @@ $('.carousel').carousel({
     $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
   });
 </script>
+
 </body>
